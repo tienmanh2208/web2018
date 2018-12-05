@@ -1,7 +1,8 @@
 # **Thực hành**
 ## **Web 2018**
-Yêu cầu: - Cắt psd thành các thành phần
-         -  Xác định font chữ sử dụng : nguồn lấy font, kiểu, các mức độ bold cần có, các font size sẽ sử dụng, .... Xác định các màu sẽ sử dụng
+Yêu cầu: 
+- Cắt psd thành các thành phần
+-  Xác định font chữ sử dụng : nguồn lấy font, kiểu, các mức độ bold cần có, các font size sẽ sử dụng, .... Xác định các màu sẽ sử dụng
 
 Thực hiện bởi [Nguyễn Tiến Mạnh](https://github.com/tienmanh2208)
 ## File gốc
