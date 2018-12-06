@@ -5,6 +5,7 @@ Yêu cầu:
 -  Xác định font chữ sử dụng : nguồn lấy font, kiểu, các mức độ bold cần có, các font size sẽ sử dụng, .... Xác định các màu sẽ sử dụng
 
 Thực hiện bởi [Nguyễn Tiến Mạnh](https://github.com/tienmanh2208)
+
 ## File gốc
 [Dropbox](https://www.dropbox.com/sh/mgx4z78ih00y78s/AABbFAhoAznmmu1jIk-49taBa?dl=0)
 
