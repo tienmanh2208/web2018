@@ -21,7 +21,7 @@ Thực hiện bởi [Nguyễn Tiến Mạnh](https://github.com/tienmanh2208)
 
 ## Link bài làm Yêu cầu 3
 
-[Custom-Layout ( image )](https://tienmanh2208.github.io/web2018/images/WaxomHemepage.png)
+[Custom-Layout ( image )](https://tienmanh2208.github.io/web2018/images/WaxomHomepage.png)
 
 ## Link bài làm Yêu cầu 4
 [Custom-layout ( html )](https://tienmanh2208.github.io/web2018/layout.html)
