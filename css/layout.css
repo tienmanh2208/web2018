@@ -8,7 +8,7 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .frame {
-    width: 1920px;
+    max-width: 1920px;
     height: 6970px;
     margin: auto;
 }
@@ -17,56 +17,42 @@ body { margin: 0px; font-size: 24pt;}
 
 .page1 {
     width: 100%;
-    height: 1024px;
+    height: 1026px;
     position: relative;
 }
 
-.page1logo {
+.page1header {
     width: 274px;
-    height: 120px;
-    position: absolute;
-    top: 9px;
-    left: 330px;
+    height: 136px;
 }
 
 .page1menu {
-    width: 862px;
-    height: 120px;
-    position: absolute;
-    top: 9px;
-    left: 730px;
+    width: 61.2%;
+    height: 136px;
+    margin: auto;
 }
 
 .page1content {
-    width: 1262px;
-    height: 734px;
-    position: absolute;
-    top: 160px;
-    left: 330px;
+    width: 100%;
+    height: 754px;
 }
 
 .slideleft {
-    width: 173px;
-    height: 734px;
-    position: absolute;
-    top: 160px;
-    left: 90px;
+    width: 19%;
+    height: 754px;
+    float: left;
 }
 
 .slideright {
-    width: 173px;
-    height: 734px;
-    position: absolute;
-    top: 160px;
-    left: 1656px;
+    width: 19%;
+    height: 754px;
+    float: right;
 }
 
 .slide {
-    width: 1738px;
-    height: 82px;
-    position: absolute;
-    top: 914px;
-    left: 92px;
+    width: 100%;
+    height: 136px;
+    clear: both;
 }
 
 /* Page 2 */
@@ -76,21 +62,19 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .page2menu {
-    width: 1570px;
-    height: 284px;
+    width: 61.2%;
+    height: 344px;
     margin: auto;
-    margin-top: 30px;
 }
 
 .page2content {
-    width: 1570px;
-    height: 742px;
+    width: 100%;
+    height: 728px;
     margin: auto;
-    margin-top: 16px;
 }
 
 .page2footer {
-    width: 1570px;
+    width: 100%;
     height: 150px;
     margin: auto;
 }
@@ -98,21 +82,19 @@ body { margin: 0px; font-size: 24pt;}
 /* Page 3 */
 .page3 {
     width: 100%;
-    height: 1188px;
+    height: 1166px;
 }
 
 .page3header {
-    width: 1570px;
-    height: 224px;
+    width: 61.2%;
+    height: 252px;
     margin: auto;
-    margin-top: 54px;
 }
 
 .page3content {
-    width: 1570px;
-    height: 872px;
+    width: 61.2%;
+    height: 914px;
     margin: auto;
-    margin-top: 8px;
 }
 
 /* Page 4 */
@@ -122,10 +104,9 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .page4content {
-    width: 1570px;
-    height: 634px;
+    width: 61.2%;
+    height: 704px;
     margin: auto;
-    margin-top: 38px;
 }
 
 /* Page 5 */
@@ -134,28 +115,33 @@ body { margin: 0px; font-size: 24pt;}
     height: 1002px;
 }
 
+.page5frame {
+    width: 61.2%;
+    height: 696px;
+    margin: auto;
+    position: relative;
+}
+
 .page5photo {
-    width: 665px;
-    height: 668px;
-    float: left;
-    margin-left: 175px;
-    margin-top: 30px;
+    width: 24%;
+    height: 696px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .page5content {
-    width: 873px;
-    height: 668px;
-    float: right;
-    margin-right: 175px;
-    margin-top: 30px;
+    width: 75%;
+    height: 696px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .page5menu {
-    width: 1570px;
-    height: 220px;
-    clear: both;
+    width: 61.2%;
+    height: 302px;
     margin: auto;
-    margin-top: 44px;
 }
 
 /* Page 6 */
@@ -165,10 +151,9 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .page6content {
-    width: 1570px;
-    height: 636px;
+    width: 61.2%;
+    height: 756px;
     margin: auto;
-    margin-top: 62px;
 }
 
 /* Page 7 */
@@ -179,12 +164,12 @@ body { margin: 0px; font-size: 24pt;}
 
 .page7top {
     width: 100%;
-    height: 490px;
+    height: 492px;
 }
 
 .page7center {
     width: 100%;
-    height: 510px;
+    height: 508px;
 }
 
 .page7bottom {
@@ -193,31 +178,19 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .page7logos {
-    width: 1570px;
-    height: 258px;
+    width: 61.2%;
+    height: 492px;
     margin: auto;
-    margin-top: 118px;
 }
 
 .page7content {
-    width: 1570px;
-    height: 396px;
+    width: 61.2%;
+    height: 508px;
     margin: auto;
-    margin-top: 60px;
 }
 
-.page7footerleft {
-    width: 803px;
-    height: 64px;
-    float: left;
-    margin-left: 175px;
-    margin-top: 22px;
-}
-
-.page7footerright {
-    width: 718px;
-    height: 64px;
-    float: right;
-    margin-right: 175px;
-    margin-top: 22px;
+.page7footer {
+    width: 61.2%;
+    height: 112px;
+    margin: auto;
 }
