@@ -84,6 +84,7 @@ body { margin: 0px; font-size: 24pt;}
     height: 50px;
     border-radius: 5px;
     background-color: #998675;
+    border-color: #998675;
 }
 
 .p1-img-circle {
@@ -107,17 +108,72 @@ body { margin: 0px; font-size: 24pt;}
 
 .page2content {
     width: 100%;
-    height: 728px;
+    height: 618px;
     margin: auto;
+    position: relative;
 }
 
 .page2footer {
     width: 100%;
     height: 150px;
     margin: auto;
+    background-image: linear-gradient(to right,#211b19, #4e3427);
 }
 
-/* Page 3 */
+.p2-submenu {
+    width: 23.23%;
+}
+
+.p2-img {
+    width: 100%;
+    height: 481px;
+    position: relative;
+}
+
+.p2-img-center {
+    position: absolute;
+    width: 40%;
+    left: 30%;
+}
+
+.p2-img-left {
+    position: absolute;
+    width: 40%;
+    left: 18%;
+    bottom: 0;
+}
+
+.p2-img-right {
+    position: absolute;
+    width: 40%;
+    right: 18%;
+    bottom: 0;
+}
+
+.page2footercontent {
+    width: 61.2%;
+    height: 100%;
+    margin: auto;
+}
+
+.page2footerleft {
+    float: left;
+    height: 100%;
+}
+
+.page2footerright {
+    float: right;
+    height: 100%;
+}
+
+.p2-button {
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #998675;
+    border-color: #998675;
+}
+/* ===============================Page 3===================================== */
 .page3 {
     width: 100%;
     height: 1166px;
@@ -236,7 +292,8 @@ body { margin: 0px; font-size: 24pt;}
 
 /* ============================Width============================== */
 .width25 { width: 25% }
-.width48-1 { width: 48.1% }
+.width40 { width: 40% }
+.width48 { width: 48% }
 .width75 { width: 75% }
 .width100 { width: 100% }
 
@@ -244,18 +301,25 @@ body { margin: 0px; font-size: 24pt;}
 .height100 { height: 100%; }
 
 /* ============================Padding============================== */
-
+.pdl-30 { padding-left: 30% }
+.pdr-30 { padding-right: 30% }
+.pdt-110 { padding-top: 110px }
 
 /* ============================Margin============================== */
 .mgt-10 { margin-top: 10px; }
 .mgt-18 { margin-top: 18px; }
+.mgt-22 { margin-top: 22px; }
 .mgt-39 { margin-top: 39px; }
 .mgt-50 { margin-top: 50px; }
 .mgt-54 { margin-top: 54px; }
 .mgt-60 { margin-top: 60px; }
+.mgt-110 { margin-top: 110px; }
+.mgt-245 { margin-top: 245px; }
 .mgr-20 { margin-right: 20px; }
 .mgr-29 { margin-right: 29px; }
+.mgr-30 { margin-right: 30px; }
 .mgr-57 { margin-right: 57px; }
+.mgb-110 {margin-bottom: 110px; }
 
 /* ============================Text align============================== */
 .ta-center-136 {
@@ -344,6 +408,11 @@ body { margin: 0px; font-size: 24pt;}
     src: url('../fonts/Roboto-Regular.ttf');
 }
 
+.f-RalewayRegular-28 {
+    font-family: Raleway-Regular;
+    font-size: 28px;
+}
+
 .f-RalewayRegular-34 {
     font-family: Raleway-Regular;
     font-size: 34px;
@@ -357,6 +426,16 @@ body { margin: 0px; font-size: 24pt;}
 .f-RalewayExtraBold-52 {
     font-family: Raleway-ExtraBold;
     font-size: 52px;
+}
+
+.f-RalewaySemiBold-22 {
+    font-family: Raleway-SemiBold;
+    font-size: 22px;
+}
+
+.f-RalewaySemiBold-30 {
+    font-family: Raleway-SemiBold;
+    font-size: 30px;
 }
 
 .f-RalewayExtraBold-14 {
@@ -374,9 +453,16 @@ body { margin: 0px; font-size: 24pt;}
     font-size: 16px;
 }
 
+.f-MontserratLight-18 {
+    font-family: Montserrat-Light;
+    font-size: 18px;
+}
 /* ============================Font colors============================== */
 .fc-white { color: #ffffff; }
 .fc-c7b299 { color: #c7b299; }
+.fc-8c8c8c { color: #8c8c8c; }
+.fc-555555 { color: #555555; }
+.fc-615855 { color: #615855; }
 
 /* ============================Order============================== */
 .order1 { order: 1; }
