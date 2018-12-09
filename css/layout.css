@@ -4,21 +4,35 @@ body { margin: 0px; font-size: 24pt;}
     border-style: inset;
     border-width: thin;
     border-color: black;
-    text-align: center;
 }
 
 .frame {
     max-width: 1920px;
     height: 6970px;
     margin: auto;
+    position: relative;
 }
 
-/* Page 1 */
+/* ============================Page 1============================ */
 
 .page1 {
     width: 100%;
     height: 1026px;
     position: relative;
+}
+
+.p1-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1026px;
+    background-image: url('../images/page1/page1-background.png');
+    filter: brightness(40%);
+}
+
+.p1-img-background {
+    filter: brightness(50%);
 }
 
 .page1header {
@@ -30,6 +44,7 @@ body { margin: 0px; font-size: 24pt;}
     width: 61.2%;
     height: 136px;
     margin: auto;
+    position: relative;
 }
 
 .page1content {
@@ -55,7 +70,30 @@ body { margin: 0px; font-size: 24pt;}
     clear: both;
 }
 
-/* Page 2 */
+.p1-img-logos {
+    width: 23.68%;
+    position: relative;
+}
+
+.p1-img-directions {
+    width: 42px;
+}
+
+.p1-button {
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #998675;
+}
+
+.p1-img-circle {
+    width: 11px;
+}
+
+.p1-img-active {
+    width: 15px;
+}
+/* =================================Page 2================================ */
 .page2 {
     width: 100%;
     height: 1225px;
@@ -194,3 +232,151 @@ body { margin: 0px; font-size: 24pt;}
     height: 112px;
     margin: auto;
 }
+
+
+/* ============================Width============================== */
+.width25 { width: 25% }
+.width48-1 { width: 48.1% }
+.width75 { width: 75% }
+.width100 { width: 100% }
+
+/* ============================Height============================== */
+.height100 { height: 100%; }
+
+/* ============================Padding============================== */
+
+
+/* ============================Margin============================== */
+.mgt-10 { margin-top: 10px; }
+.mgt-18 { margin-top: 18px; }
+.mgt-39 { margin-top: 39px; }
+.mgt-50 { margin-top: 50px; }
+.mgt-54 { margin-top: 54px; }
+.mgt-60 { margin-top: 60px; }
+.mgr-20 { margin-right: 20px; }
+.mgr-29 { margin-right: 29px; }
+.mgr-57 { margin-right: 57px; }
+
+/* ============================Text align============================== */
+.ta-center-136 {
+    justify-items: center;
+    line-height: 136px;
+}
+
+.ta-center { text-align: center; }
+
+/* ============================Flex============================== */
+.flex-row-nowrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* ============================Float============================== */
+.float-left { float: left; }
+.float-right { float: right; }
+.clearfloat { clear:both; }
+
+/* ============================Position============================== */
+.absolute-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* ============================Fonts============================== */
+@font-face {
+    font-family: Montserrat-Light;
+    src: url('../fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-UntraLight;
+    src: url('../fonts/Montserrat-UntraLight.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url('../fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url('../fonts/Raleway-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url('../fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url('../fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+.f-RalewayRegular-34 {
+    font-family: Raleway-Regular;
+    font-size: 34px;
+}
+
+.f-RalewayMedium-36 {
+    font-family: Raleway-Medium;
+    font-size: 36px;
+}
+
+.f-RalewayExtraBold-52 {
+    font-family: Raleway-ExtraBold;
+    font-size: 52px;
+}
+
+.f-RalewayExtraBold-14 {
+    font-family: Raleway-ExtraBold;
+    font-size: 14px;
+}
+
+.f-MontserratLight-14 {
+    font-family: Montserrat-Light;
+    font-size: 14px;
+}
+
+.f-MontserratLight-16 {
+    font-family: Montserrat-Light;
+    font-size: 16px;
+}
+
+/* ============================Font colors============================== */
+.fc-white { color: #ffffff; }
+.fc-c7b299 { color: #c7b299; }
+
+/* ============================Order============================== */
+.order1 { order: 1; }
