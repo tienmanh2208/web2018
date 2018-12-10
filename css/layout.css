@@ -259,15 +259,44 @@ body { margin: 0px; font-size: 24pt;}
 .page4 {
     width: 100%;
     height: 710px;
+    position: relative;
+}
+
+.p4-blur {
+    width: 100%;
+    height: 710px;
+    background-image: url('../images/page4/page4-background.png');
+    filter: brightness(60%);
 }
 
 .page4content {
+    position: absolute;
+    top: 0;
+    left: 19.4%;
     width: 61.2%;
     height: 704px;
-    margin: auto;
 }
 
-/* Page 5 */
+.p4-icon {
+    width: 102px;
+    height: 102px;
+    position: relative;
+}
+
+.p4-icon-blur {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 70px;
+    filter: opacity(30%);
+}
+
+.p4-icon-position {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+/* ==============================Page 5============================= */
 .page5 {
     width: 100%;
     height: 1002px;
@@ -281,7 +310,7 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .page5photo {
-    width: 24%;
+    width: 40%;
     height: 696px;
     position: absolute;
     left: 0;
@@ -289,11 +318,17 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .page5content {
-    width: 75%;
+    width: 60%;
     height: 696px;
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.page5footer {
+    width: 100%;
+    height: 302px;
+    background-image: linear-gradient(to right,#211b19, #4e3427);
 }
 
 .page5menu {
@@ -302,7 +337,25 @@ body { margin: 0px; font-size: 24pt;}
     margin: auto;
 }
 
-/* Page 6 */
+.p5-photo {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.p5-icon {
+    width: 140px;
+}
+
+._ {
+    border-style: solid;
+    border-width: 1px;
+    width: 30px;
+    border-color: white;
+    margin: auto;
+}
+/* =======================================Page 6================================== */
 .page6 {
     width: 100%;
     height: 760px;
@@ -371,14 +424,19 @@ body { margin: 0px; font-size: 24pt;}
 .pdl30 { padding-left: 30px }
 .pdr-26 { padding-right: 26px }
 .pdr-30 { padding-right: 30% }
+.pdt-5 { padding-top: 5px }
 .pdt-110 { padding-top: 110px }
 
 /* ============================Margin============================== */
 .mgt-10 { margin-top: 10px; }
+.mgt-12 { margin-top: 12px; }
 .mgt-18 { margin-top: 18px; }
 .mgt-22 { margin-top: 22px; }
+.mgt-25 { margin-top: 25px; }
 .mgt-30 { margin-top: 30px; }
+.mgt-35 { margin-top: 35px; }
 .mgt-39 { margin-top: 39px; }
+.mgt-45 { margin-top: 45px; }
 .mgt-50 { margin-top: 50px; }
 .mgt-54 { margin-top: 54px; }
 .mgt-60 { margin-top: 60px; }
@@ -391,6 +449,7 @@ body { margin: 0px; font-size: 24pt;}
 .mgr-30 { margin-right: 30px; }
 .mgr-57 { margin-right: 57px; }
 .mgb-110 {margin-bottom: 110px; }
+.mgl-30 { margin-left: 30px; }
 
 /* ============================Text align============================== */
 .ta-center-136 {
@@ -445,8 +504,8 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 @font-face {
-    font-family: Montserrat-UntraLight;
-    src: url('../fonts/Montserrat-UntraLight.ttf');
+    font-family: Montserrat-UltraLight;
+    src: url('../fonts/Montserrat-UltraLight.otf');
 }
 
 @font-face {
@@ -494,6 +553,11 @@ body { margin: 0px; font-size: 24pt;}
     font-size: 20px;
 }
 
+.f-RalewayMedium-30 {
+    font-family: Raleway-Medium;
+    font-size: 30px;
+}
+
 .f-RalewayMedium-36 {
     font-family: Raleway-Medium;
     font-size: 36px;
@@ -533,6 +597,16 @@ body { margin: 0px; font-size: 24pt;}
     font-family: Montserrat-Light;
     font-size: 18px;
 }
+
+.f-MontserratRegular-14 {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+}
+
+.f-MontserratUltraLight-48 {
+    font-family: Montserrat-UltraLight;
+    font-size: 48px;
+}
 /* ============================Font colors============================== */
 .fc-white { color: #ffffff; }
 .fc-c7b299 { color: #c7b299; }
@@ -546,3 +620,9 @@ body { margin: 0px; font-size: 24pt;}
 
 /* ============================Order============================== */
 .order1 { order: 1; }
+
+/* ============================Line Height============================== */
+.lh-28 {
+    justify-items: center;
+    line-height: 28px;
+}
