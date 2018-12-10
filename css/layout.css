@@ -7,7 +7,8 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .frame {
-    max-width: 1920px;
+    /* max-width: 1920px; */
+    width: 100%;
     height: 6970px;
     margin: auto;
     position: relative;
@@ -27,7 +28,7 @@ body { margin: 0px; font-size: 24pt;}
     left: 0;
     width: 100%;
     height: 1026px;
-    background-image: url('../images/page1/page1-background.png');
+    background: url('../images/page1/page1-background.png') center;
     filter: brightness(40%);
 }
 
@@ -41,6 +42,7 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .page1menu {
+    max-width: 1175px;
     width: 61.2%;
     height: 136px;
     margin: auto;
@@ -108,6 +110,7 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .page2content {
+    max-width: 1920px;
     width: 100%;
     height: 618px;
     margin: auto;
@@ -187,6 +190,7 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .page3content {
+    max-width: 1175px;
     width: 61.2%;
     height: 914px;
     margin: auto;
@@ -265,7 +269,7 @@ body { margin: 0px; font-size: 24pt;}
 .p4-blur {
     width: 100%;
     height: 710px;
-    background-image: url('../images/page4/page4-background.png');
+    background: url('../images/page4/page4-background.png') center;
     filter: brightness(60%);
 }
 
@@ -303,6 +307,7 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .page5frame {
+    max-width: 1175px;
     width: 61.2%;
     height: 696px;
     margin: auto;
@@ -426,36 +431,68 @@ body { margin: 0px; font-size: 24pt;}
 .page7top {
     width: 100%;
     height: 492px;
+    position: relative;
+    /* background: #fff url('../images/page7/page7-header-background.png') center center no-repeat; */
+}
+
+.p7-blur {
+    width: 100%;
+    height: 492px;
+    background: #fff url('../images/page7/page7-header-background.png') center center;
+    filter: brightness(40%);
 }
 
 .page7center {
     width: 100%;
     height: 508px;
+    background: #191919;
 }
 
 .page7bottom {
     width: 100%;
     height: 112px;
+    background: #000000;
 }
 
 .page7logos {
     width: 61.2%;
     height: 492px;
-    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 19.4%;
 }
 
 .page7content {
+    max-width: 1175px;
     width: 61.2%;
     height: 508px;
     margin: auto;
 }
 
+.p7-content-col {
+    width: 22.5%;
+    margin-right: 35px;
+}
+
 .page7footer {
+    max-width: 1175px;
     width: 61.2%;
     height: 112px;
     margin: auto;
 }
 
+.p7-logo {
+    width: 18.5%;
+    max-width: 225px;
+    height: 18.5%;
+}
+
+._7 {
+    width: 100%;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: #252525;
+}
 
 /* ============================Width============================== */
 .width25 { width: 25% }
@@ -484,6 +521,7 @@ body { margin: 0px; font-size: 24pt;}
 
 .mgt-10 { margin-top: 10px; }
 .mgt-12 { margin-top: 12px; }
+.mgt-15 { margin-top: 15px; }
 .mgt-18 { margin-top: 18px; }
 .mgt-22 { margin-top: 22px; }
 .mgt-25 { margin-top: 25px; }
@@ -495,6 +533,7 @@ body { margin: 0px; font-size: 24pt;}
 .mgt-54 { margin-top: 54px; }
 .mgt-60 { margin-top: 60px; }
 .mgt-78 { margin-top: 78px; }
+.mgt-103 { margin-top: 103px; }
 .mgt-110 { margin-top: 110px; }
 .mgt-245 { margin-top: 245px; }
 .mgr-4 { margin-right: 4px; }
@@ -503,6 +542,7 @@ body { margin: 0px; font-size: 24pt;}
 .mgr-29 { margin-right: 29px; }
 .mgr-30 { margin-right: 30px; }
 .mgr-57 { margin-right: 57px; }
+.mgr-85 { margin-right: 85px; }
 .mgb-110 {margin-bottom: 110px; }
 .mgl-30 { margin-left: 30px; }
 
@@ -619,9 +659,9 @@ body { margin: 0px; font-size: 24pt;}
     font-size: 36px;
 }
 
-.f-RalewayExtraBold-52 {
-    font-family: Raleway-ExtraBold;
-    font-size: 52px;
+.f-RalewayBold-24 {
+    font-family: Raleway-Bold;
+    font-size: 24px;
 }
 
 .f-RalewaySemiBold-22 {
@@ -637,6 +677,21 @@ body { margin: 0px; font-size: 24pt;}
 .f-RalewayExtraBold-14 {
     font-family: Raleway-ExtraBold;
     font-size: 14px;
+}
+
+.f-RalewayExtraBold-52 {
+    font-family: Raleway-ExtraBold;
+    font-size: 52px;
+}
+
+.f-MontserratLight-12 {
+    font-family: Montserrat-Light;
+    font-size: 14px;
+}
+
+.f-MontserratLight-13 {
+    font-family: Montserrat-Light;
+    font-size: 13px;
 }
 
 .f-MontserratLight-14 {
@@ -673,6 +728,17 @@ body { margin: 0px; font-size: 24pt;}
     font-family: Roboto;
     font-size: 12px;
 }
+
+.p7-photos1, .p7-photos2, .p7-photos3, .p7-photos4 {
+    width: 48%;
+    height: 98px;
+}
+
+.p7-photos1 { background: url('../images/page7/page7-photo1.png') center; }
+.p7-photos2 { background: url('../images/page7/page7-photo2.png') center; }
+.p7-photos3 { background: url('../images/page7/page7-photo3.png') center; }
+.p7-photos4 { background: url('../images/page7/page7-photo4.png') center; }
+
 /* ============================Font colors============================== */
 .fc-white { color: #ffffff; }
 .fc-c7b299 { color: #c7b299; }
@@ -680,6 +746,9 @@ body { margin: 0px; font-size: 24pt;}
 .fc-555555 { color: #555555; }
 .fc-615855 { color: #615855; }
 .fc-d1d1d1 { color: #d1d1d1; }
+.fc-363636 { color: #363636; }
+.fc-00bff3 { color: #00bff3; }
+.fc-959595 { color: #959595; }
 
 /* ============================Background colors============================== */
 .bgc-362f2d { background-color: #362f2d; }
@@ -691,4 +760,14 @@ body { margin: 0px; font-size: 24pt;}
 .lh-28 {
     justify-items: center;
     line-height: 28px;
+}
+
+.lh-24 {
+    justify-items: center;
+    line-height: 24px;
+}
+
+.lh-112 {
+    justify-items: center;
+    line-height: 112px;
 }
