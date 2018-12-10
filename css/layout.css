@@ -367,7 +367,57 @@ body { margin: 0px; font-size: 24pt;}
     margin: auto;
 }
 
-/* Page 7 */
+.p6-items {
+    width: 370px;
+    height: 395px;
+    position: relative;
+}
+
+.p6-photo1 {
+    width: 100%;
+    height: 220px;
+    background-image: url('../images/page6/page6-photo1.png');
+}
+
+.p6-photo2 {
+    width: 100%;
+    height: 220px;
+    background-image: url('../images/page6/page6-photo2.png');
+    filter: brightness(40%)
+}
+
+.p6-photo3 {
+    width: 100%;
+    height: 220px;
+    background-image: url('../images/page6/page6-photo3.png');
+}
+
+.p6-items-content {
+    width: 100%;
+    height: 175px;
+}
+
+.p6-calendar {
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.p6-date {
+    width: 100%;
+    height: 35px;
+    background-color: #363636;
+}
+
+.p6-month {
+    width: 100%;
+    height: 25px;
+    background-color: #252525;
+}
+
+/* ======================================Page 7================================== */
 .page7 {
     width: 100%;
     height: 1112px;
@@ -411,6 +461,7 @@ body { margin: 0px; font-size: 24pt;}
 .width25 { width: 25% }
 .width40 { width: 40% }
 .width48 { width: 48% }
+.width65 { width: 65% }
 .width75 { width: 75% }
 .width100 { width: 100% }
 .width120 { width: 120px; }
@@ -422,12 +473,15 @@ body { margin: 0px; font-size: 24pt;}
 .pdl-26 { padding-left: 26px }
 .pdl-30 { padding-left: 30% }
 .pdl30 { padding-left: 30px }
+.pdr30 { padding-right: 30px }
 .pdr-26 { padding-right: 26px }
 .pdr-30 { padding-right: 30% }
 .pdt-5 { padding-top: 5px }
 .pdt-110 { padding-top: 110px }
 
 /* ============================Margin============================== */
+.mg-auto { margin: auto; }
+
 .mgt-10 { margin-top: 10px; }
 .mgt-12 { margin-top: 12px; }
 .mgt-18 { margin-top: 18px; }
@@ -443,6 +497,7 @@ body { margin: 0px; font-size: 24pt;}
 .mgt-78 { margin-top: 78px; }
 .mgt-110 { margin-top: 110px; }
 .mgt-245 { margin-top: 245px; }
+.mgr-4 { margin-right: 4px; }
 .mgr-10 { margin-right: 10px; }
 .mgr-20 { margin-right: 20px; }
 .mgr-29 { margin-right: 29px; }
@@ -458,6 +513,7 @@ body { margin: 0px; font-size: 24pt;}
 }
 
 .ta-center { text-align: center; }
+.ta-left { text-align: left; }
 
 /* ============================Flex============================== */
 .flex-row-nowrap {
@@ -598,6 +654,11 @@ body { margin: 0px; font-size: 24pt;}
     font-size: 18px;
 }
 
+.f-MontserratLight-24 {
+    font-family: Montserrat-Light;
+    font-size: 24px;
+}
+
 .f-MontserratRegular-14 {
     font-family: Montserrat-Regular;
     font-size: 14px;
@@ -606,6 +667,11 @@ body { margin: 0px; font-size: 24pt;}
 .f-MontserratUltraLight-48 {
     font-family: Montserrat-UltraLight;
     font-size: 48px;
+}
+
+.f-Roboto-12 {
+    font-family: Roboto;
+    font-size: 12px;
 }
 /* ============================Font colors============================== */
 .fc-white { color: #ffffff; }
