@@ -98,6 +98,7 @@ body { margin: 0px; font-size: 24pt;}
 .page2 {
     width: 100%;
     height: 1225px;
+    background-color: white;
 }
 
 .page2menu {
@@ -191,7 +192,70 @@ body { margin: 0px; font-size: 24pt;}
     margin: auto;
 }
 
-/* Page 4 */
+.p3-btn-active {
+    background-color: #998675;
+    border-radius: 5px;
+    justify-items: center;
+    line-height: 32px;
+}
+
+.p3-btn {
+    border-style: solid;
+    border-width: thin;
+    border-color: #ebebeb;
+    border-radius: 5px;
+    justify-items: center;
+    line-height: 32px;
+}
+
+.p3-content {
+    width: 65%;
+    margin: auto;
+}
+
+.p3-item {
+    width: 31.5%;
+    height: 338px;
+    position: relative;
+}
+
+.p3-photo {
+    width: 100%;
+    height: 238px;
+}
+
+.p3-item-content {
+    width: 100%;
+    height: 100px;
+}
+
+.p3-photo1 { background-image: url('../images/page3/page3-photo1.png'); }
+.p3-photo2 { 
+    background-image: url('../images/page3/page3-photo2.png'); 
+    filter: brightness(50%);
+    position: relative;
+}
+.p3-photo3 { background-image: url('../images/page3/page3-photo3.png'); }
+.p3-photo4 { background-image: url('../images/page3/page3-photo4.png'); }
+.p3-photo5 { background-image: url('../images/page3/page3-photo5.png'); }
+.p3-photo6 { background-image: url('../images/page3/page3-photo6.png'); }
+
+.p3-overlay {
+    width: 100%;
+    height: 238px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.p3-button {
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #998675;
+    border-color: #998675;
+}
+/* ======================================Page 4============================== */
 .page4 {
     width: 100%;
     height: 710px;
@@ -296,12 +360,16 @@ body { margin: 0px; font-size: 24pt;}
 .width48 { width: 48% }
 .width75 { width: 75% }
 .width100 { width: 100% }
+.width120 { width: 120px; }
 
 /* ============================Height============================== */
 .height100 { height: 100%; }
 
 /* ============================Padding============================== */
+.pdl-26 { padding-left: 26px }
 .pdl-30 { padding-left: 30% }
+.pdl30 { padding-left: 30px }
+.pdr-26 { padding-right: 26px }
 .pdr-30 { padding-right: 30% }
 .pdt-110 { padding-top: 110px }
 
@@ -309,12 +377,15 @@ body { margin: 0px; font-size: 24pt;}
 .mgt-10 { margin-top: 10px; }
 .mgt-18 { margin-top: 18px; }
 .mgt-22 { margin-top: 22px; }
+.mgt-30 { margin-top: 30px; }
 .mgt-39 { margin-top: 39px; }
 .mgt-50 { margin-top: 50px; }
 .mgt-54 { margin-top: 54px; }
 .mgt-60 { margin-top: 60px; }
+.mgt-78 { margin-top: 78px; }
 .mgt-110 { margin-top: 110px; }
 .mgt-245 { margin-top: 245px; }
+.mgr-10 { margin-right: 10px; }
 .mgr-20 { margin-right: 20px; }
 .mgr-29 { margin-right: 29px; }
 .mgr-30 { margin-right: 30px; }
@@ -418,6 +489,11 @@ body { margin: 0px; font-size: 24pt;}
     font-size: 34px;
 }
 
+.f-RalewayMedium-20 {
+    font-family: Raleway-Medium;
+    font-size: 20px;
+}
+
 .f-RalewayMedium-36 {
     font-family: Raleway-Medium;
     font-size: 36px;
@@ -463,6 +539,10 @@ body { margin: 0px; font-size: 24pt;}
 .fc-8c8c8c { color: #8c8c8c; }
 .fc-555555 { color: #555555; }
 .fc-615855 { color: #615855; }
+.fc-d1d1d1 { color: #d1d1d1; }
+
+/* ============================Background colors============================== */
+.bgc-362f2d { background-color: #362f2d; }
 
 /* ============================Order============================== */
 .order1 { order: 1; }
