@@ -10,9 +10,15 @@ body { margin: 0px; font-size: 24pt;}
     /* max-width: 1920px; */
     width: 100%;
     height: 6970px;
-    margin: auto;
+    /* margin: auto; */
     position: relative;
 }
+
+ul li {
+    display: inline;
+}
+
+a { text-decoration: none; color: white;}
 
 /* ============================Page 1============================ */
 
@@ -77,9 +83,13 @@ body { margin: 0px; font-size: 24pt;}
     position: relative;
 }
 
-.p1-img-directions {
-    width: 42px;
-}
+.p1-img-left, .p1-img-right { width: 45px; height: 78px; }
+
+.p1-img-right { background-image: url('../images/page1/page1-right.png'); }
+.p1-img-right:hover { background-image: url('../images/page1/page1-right-overlay.png'); }
+
+.p1-img-left { background-image: url('../images/page1/page1-left.png'); }
+.p1-img-left:hover { background-image: url('../images/page1/page1-left-overlay.png'); }
 
 .p1-button {
     width: 170px;
@@ -177,6 +187,28 @@ body { margin: 0px; font-size: 24pt;}
     background-color: #998675;
     border-color: #998675;
 }
+
+/* .p2-menutitle1:hover, .p2-menutitle2:hover, .p2-menutitle3:hover, .p2-menutitle4:hover { color: #c7b299; } */
+
+.p2-webappdesign, .p2-development, .p2-customization, .p2-marketing {
+    width: 52px;
+    height: 52px; 
+}
+
+.p2-webappdesign { background-image: url('../images/page2/page2-icon-webappdesign.png'); margin: auto; }
+.p2-development { background-image: url('../images/page2/page2-icon-development.png'); margin: auto; }
+.p2-customization { background-image: url('../images/page2/page2-icon-customization.png'); margin: auto;}
+.p2-marketing { background-image: url('../images/page2/page2-icon-marketing.png'); margin: auto; }
+
+.p2-webappdesign:hover + .p2-menutitle1 { color: #c7b299; }
+.p2-webappdesign:hover { background-image: url('../images/page2/page2-icon-webappdesign-overlay.png'); }
+.p2-development:hover + .p2-menutitle2 { color: #c7b299; }
+.p2-development:hover { background-image: url('../images/page2/page2-icon-development-overlay.png')}
+.p2-customization:hover + .p2-menutitle3 { color: #c7b299; }
+.p2-customization:hover { background-image: url('../images/page2/page2-icon-customization-overlay.png')}
+.p2-marketing:hover + .p2-menutitle4 { color: #c7b299; }
+.p2-marketing:hover { background-image: url('../images/page2/page2-icon-marketing-overlay.png')}
+
 /* ===============================Page 3===================================== */
 .page3 {
     width: 100%;
@@ -233,24 +265,46 @@ body { margin: 0px; font-size: 24pt;}
     height: 100px;
 }
 
-.p3-photo1 { background-image: url('../images/page3/page3-photo1.png'); }
-.p3-photo2 { 
-    background-image: url('../images/page3/page3-photo2.png'); 
-    filter: brightness(50%);
-    position: relative;
+/* .p3-item1:hover, .p3-photo2:hover, .p3-photo3:hover, .p3-photo4:hover, .p3-photo5:hover, .p3-photo6:hover { filter: brightness(50%); } */
+.p3-item1:hover .p3-overlay1, .p3-item2:hover .p3-overlay2, .p3-item3:hover .p3-overlay3, .p3-item4:hover .p3-overlay4, .p3-item5:hover .p3-overlay5, .p3-item6:hover .p3-overlay6{ 
+    display: block; 
 }
+.p3-item1:hover .p3-photo1, .p3-item2:hover .p3-photo2, .p3-item3:hover .p3-photo3, .p3-item4:hover .p3-photo4, .p3-item5:hover .p3-photo5, .p3-item6:hover .p3-photo6 { 
+    filter: brightness(60%); 
+}
+.p3-item1:hover .p3-item-content1, .p3-item2:hover .p3-item-content2, .p3-item3:hover .p3-item-content3, .p3-item4:hover .p3-item-content4, .p3-item5:hover .p3-item-content5, .p3-item6:hover .p3-item-content6 { 
+    background-color: #362f2d; 
+}
+.p3-item1:hover .p3-item1-title, .p3-item2:hover .p3-item2-title, .p3-item3:hover .p3-item3-title, .p3-item4:hover .p3-item4-title, .p3-item5:hover .p3-item5-title, .p3-item6:hover .p3-item6-title { 
+    color: #ffffff; 
+}
+.p3-item1:hover .p3-item1-content, .p3-item2:hover .p3-item2-content, .p3-item3:hover .p3-item3-content, .p3-item4:hover .p3-item4-content, .p3-item5:hover .p3-item5-content, .p3-item6:hover .p3-item6-content { color: #c7b299; }
+
+.p3-photo1 { background-image: url('../images/page3/page3-photo1.png'); }
+.p3-photo2 { background-image: url('../images/page3/page3-photo2.png'); }
 .p3-photo3 { background-image: url('../images/page3/page3-photo3.png'); }
 .p3-photo4 { background-image: url('../images/page3/page3-photo4.png'); }
 .p3-photo5 { background-image: url('../images/page3/page3-photo5.png'); }
 .p3-photo6 { background-image: url('../images/page3/page3-photo6.png'); }
 
-.p3-overlay {
+.p3-overlay, .p3-overlay1, .p3-overlay2, .p3-overlay3, .p3-overlay4, .p3-overlay5, .p3-overlay6 {
+    display: none;
     width: 100%;
     height: 238px;
     position: absolute;
     top: 0;
     left: 0;
 }
+
+.p3-link, .p3-search {
+    width: 31px;
+    height: 31px;
+}
+
+.p3-link { background-image: url('../images/page3/page3-icon-link.png'); }
+.p3-link:hover { background-image: url('../images/page3/page3-icon-link-overlay.png'); }
+.p3-search { background-image: url('../images/page3/page3-icon-search.png'); }
+.p3-search:hover { background-image: url('../images/page3/page3-icon-search-overlay.png'); }
 
 .p3-button {
     width: 170px;
@@ -388,7 +442,6 @@ body { margin: 0px; font-size: 24pt;}
     width: 100%;
     height: 220px;
     background-image: url('../images/page6/page6-photo2.png');
-    filter: brightness(40%)
 }
 
 .p6-photo3 {
@@ -414,12 +467,38 @@ body { margin: 0px; font-size: 24pt;}
     width: 100%;
     height: 35px;
     background-color: #363636;
+    border-radius: 5px 5px 0 0;
 }
 
 .p6-month {
     width: 100%;
     height: 25px;
     background-color: #252525;
+    border-radius: 0 0 5px 5px;
+}
+
+.p6-item1:hover .p6-photo1, .p6-item2:hover .p6-photo2, .p6-item3:hover .p6-photo3 {
+    filter: brightness(40%);
+}
+
+.p6-item1:hover .p6-item-title, .p6-item2:hover .p6-item-title, .p6-item3:hover .p6-item-title {
+    color: #c7b299;
+}
+
+.p6-item1:hover .p6-item-content, .p6-item2:hover .p6-item-content, .p6-item3:hover .p6-item-content {
+    color: #ffffff;
+}
+
+.p6-item1:hover .p6-item-content1, .p6-item2:hover .p6-item-content2, .p6-item3:hover .p6-item-content3 {
+    background-color: #362f2d;
+}
+
+.p6-item1:hover .p6-date, .p6-item2:hover .p6-date, .p6-item3:hover .p6-date {
+    background-color: #c7b299;
+}
+
+.p6-item1:hover .p6-month, .p6-item2:hover .p6-month, .p6-item3:hover .p6-month {
+    background-color: #a48d72;
 }
 
 /* ======================================Page 7================================== */
@@ -716,7 +795,7 @@ body { margin: 0px; font-size: 24pt;}
 
 .f-MontserratRegular-14 {
     font-family: Montserrat-Regular;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .f-MontserratUltraLight-48 {
