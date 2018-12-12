@@ -48,7 +48,7 @@ a { text-decoration: none; color: white;}
 }
 
 .page1menu {
-    max-width: 1175px;
+    max-width: 1920px;
     width: 61.2%;
     height: 136px;
     margin: auto;
@@ -82,6 +82,8 @@ a { text-decoration: none; color: white;}
     width: 23.68%;
     position: relative;
 }
+
+.p1-menu:hover a{ color: #c7b299; }
 
 .p1-img-left, .p1-img-right { width: 45px; height: 78px; }
 
@@ -294,12 +296,15 @@ a { text-decoration: none; color: white;}
 }
 .p3-item1:hover .p3-item1-content, .p3-item2:hover .p3-item2-content, .p3-item3:hover .p3-item3-content, .p3-item4:hover .p3-item4-content, .p3-item5:hover .p3-item5-content, .p3-item6:hover .p3-item6-content { color: #c7b299; }
 
-.p3-photo1 { background-image: url('../images/page3/page3-photo1.png'); }
-.p3-photo2 { background-image: url('../images/page3/page3-photo2.png'); }
-.p3-photo3 { background-image: url('../images/page3/page3-photo3.png'); }
-.p3-photo4 { background-image: url('../images/page3/page3-photo4.png'); }
-.p3-photo5 { background-image: url('../images/page3/page3-photo5.png'); }
-.p3-photo6 { background-image: url('../images/page3/page3-photo6.png'); }
+.p3-photo1 { 
+    background: url('../images/page3/page3-photo1.png') center center; 
+    background-size: auto 100%;
+}
+.p3-photo2 { background: url('../images/page3/page3-photo2.png') center center; }
+.p3-photo3 { background: url('../images/page3/page3-photo3.png'); }
+.p3-photo4 { background: url('../images/page3/page3-photo4.png'); }
+.p3-photo5 { background: url('../images/page3/page3-photo5.png') center center; }
+.p3-photo6 { background: url('../images/page3/page3-photo6.png') center center; }
 
 .p3-overlay, .p3-overlay1, .p3-overlay2, .p3-overlay3, .p3-overlay4, .p3-overlay5, .p3-overlay6 {
     display: none;
@@ -887,4 +892,26 @@ a { text-decoration: none; color: white;}
     .lh-28 { line-height: 24px; }
 
     .mgr-29 { margin-right: 10px; }
+}
+
+@media only screen and (max-width: 1150px) {
+    .f-MontserratLight-16 { font-size: 12px; }
+
+    .f-MontserratLight-14 { font-size: 8px; }
+
+    .f-MontserratLight-12 { font-size: 6px; }
+
+    .f-RalewayExtraBold-52 { font-size: 45px; }
+
+    .f-RalewaySemiBold-22 { font-size: 16px; }
+
+    .f-RalewayMedium-20 { font-size: 14px; }
+
+    .f-MontserratUltraLight-48 { font-size: 30px; }
+
+    .lh-28 { line-height: 20px; }
+
+    .mgr-29 { margin-right: 5px; }
+
+    .mgr-57 { margin-right: 20px; }
 }
