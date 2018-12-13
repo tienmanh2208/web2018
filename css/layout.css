@@ -1,4 +1,4 @@
-body { margin: 0px; font-size: 24pt;}
+body { margin: 0px; font-size: 24pt; cursor: default;}
 
 .borderinset {
     border-style: inset;
@@ -19,6 +19,9 @@ ul li {
 }
 
 a { text-decoration: none; color: white;}
+
+.cursor-pointer { cursor: pointer; }
+.cursor-default { cursor: default; }
 
 /* ============================Page 1============================ */
 
@@ -666,6 +669,12 @@ a { text-decoration: none; color: white;}
     justify-content: center;
 }
 
+.flex-row-nowrap-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -892,6 +901,8 @@ a { text-decoration: none; color: white;}
     .lh-28 { line-height: 24px; }
 
     .mgr-29 { margin-right: 10px; }
+
+    .f-RalewayRegular-34 { font-size: 29px; }
 }
 
 @media only screen and (max-width: 1150px) {
