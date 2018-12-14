@@ -3,19 +3,18 @@
 <head>
     <title>Layout</title>
     <link rel="stylesheet" href="./css/layout.css">
+    <script src="./js/layout.js"></script>
 </head>
 <body>
     <div class='frame'>
         <!-- ===============================Page 1============================= -->
-        <div class='p1-blur'></div>
+        <div class='p1-blur absolute-left'></div>
         <div class="page1">
             <div class="page1menu">
                 <div class="width25 absolute-left ta-center-136">
-                    <div class="flex-column height100">
-                        <div class="flex-row-nowrap-left">
-                        <img class="p1-img-logos float-left" src="./images/page1/page1-logos.png">
+                    <img class="p1-img-logos float-left mgt-35" src="./images/page1/page1-logos.png">
+                    <div class="flex-row-nowrap-left">
                         <div class="f-RalewayRegular-34 fc-white"><a href="#">Waxom</a></div>
-                        </div>
                     </div>
                 </div>
                 <div class="width75 absolute-right ta-center-136 f-MontserratLight-14 fc-white">
@@ -47,36 +46,36 @@
             </div>
             <div class="slideleft flex-column">
                 <div class="flex-row-nowrap">
-                    <div class="p1-img-left cursor-pointer"></div>
+                    <div id="p1-left" class="p1-img-left cursor-pointer"></div>
                 </div>
             </div>
             <div class="slideright flex-column">
                 <div class="flex-row-nowrap">
-                    <div class="p1-img-right cursor-pointer"></div>
+                    <div id="p1-right" class="p1-img-right cursor-pointer"></div>
                 </div>
             </div>
             <div class="page1content fc-white order1">
                 <div class="flex-column height100">
                     <div class="flex-row-nowrap">
-                        <div class="f-RalewayMedium-36">Unique and Modern Design</div>
+                        <div id="p1-title" class="f-RalewayMedium-36">Unique and Modern Design</div>
                     </div>
                     <div class="flex-row-nowrap mgt-10">
-                        <div class="f-RalewayExtraBold-52">Portfolio PSD Template</div>
+                        <div id="p1-name" class="f-RalewayExtraBold-52">Portfolio PSD Template</div>
                     </div>
                     <div class="flex-row-nowrap mgt-18">
-                        <div class="f-MontserratLight-16 width48 ta-center lh-24">Nam liber tempor cum soluta nobis eleifend option congue nihil imper- diet doming id quod mazim placerat facer possim assum</div>
+                        <div id="p1-content" class="f-MontserratLight-16 width48 ta-center lh-24">Nam liber tempor cum soluta nobis eleifend option congue nihil imper- diet doming id quod mazim placerat facer possim assum</div>
                     </div>
                     <div class="flex-row-nowrap mgt-50">
-                        <input class="p1-button f-RalewayExtraBold-14 fc-white cursor-pointer" type="button" value="GET STARTED"></input>
+                        <input class="button f-RalewayExtraBold-14 fc-white cursor-pointer" type="button" value="GET STARTED"></input>
                     </div> 
                 </div>
             </div>
             <div class="slide flex-row-nowrap">
                 <div class="mgt-60">
-                    <img class="p1-img-circle cursor-pointer" src="./images/page1/page1-circle.png">
-                    <img class="p1-img-active cursor-pointer" src="./images/page1/page1-circle-active.png">
-                    <img class="p1-img-circle cursor-pointer" src="./images/page1/page1-circle.png">
-                    <img class="p1-img-circle cursor-pointer" src="./images/page1/page1-circle.png">
+                    <img id="p1-slide1" class="p1-img-active cursor-pointer" src="./images/page1/page1-circle-active.png">
+                    <img id="p1-slide2" class="p1-img-circle cursor-pointer" src="./images/page1/page1-circle.png">
+                    <img id="p1-slide3" class="p1-img-circle cursor-pointer" src="./images/page1/page1-circle.png">
+                    <img id="p1-slide4" class="p1-img-circle cursor-pointer" src="./images/page1/page1-circle.png">
                 </div>
             </div>
         </div>
@@ -128,7 +127,7 @@
                         <div class="f-MontserratLight-18 fc-615855">Don't Forget to Rate the Template. Thanks so much!</div>
                     </div>
                     <div class="page2footerright flex-column">
-                        <input class="p2-button f-RalewayExtraBold-14 fc-white cursor-pointer" type="button" value="PURCHASE NOW"></input>
+                        <input class="button f-RalewayExtraBold-14 fc-white cursor-pointer" type="button" value="PURCHASE NOW"></input>
                     </div>
                 </div>
             </div>
@@ -139,18 +138,18 @@
                 <div class="f-RalewaySemiBold-30 fc-555555 mgt-78">Our Lastest Projects.</div>
                 <div class="p3-content f-MontserratLight-16 fc-8c8c8c mgt-22 lh-28">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
                 <div class="flex-row-nowrap f-MontserratLight-14 fc-8c8c8c mgt-39">
-                    <div class="fc-white pdl-26 pdr-26 p3-btn-active mgr-10 cursor-pointer">All</div>
-                    <div class="p3-btn width120 mgr-10 cursor-pointer">Web Design</div>
-                    <div class="p3-btn width120 mgr-10 cursor-pointer">Mobile App</div>
-                    <div class="p3-btn width120 mgr-10 cursor-pointer">Illustration</div>
-                    <div class="p3-btn width120 cursor-pointer">Photography</div>
+                    <div id="p3-all" class="pdl-26 pdr-26 p3-btn-active mgr-10 cursor-pointer">All</div>
+                    <div id="p3-webdesign" class="p3-btn width120 mgr-10 cursor-pointer">Web Design</div>
+                    <div id="p3-mobileapp" class="p3-btn width120 mgr-10 cursor-pointer">Mobile App</div>
+                    <div id="p3-illustration" class="p3-btn width120 mgr-10 cursor-pointer">Illustration</div>
+                    <div id="p3-photography" class="p3-btn width120 cursor-pointer">Photography</div>
                 </div>
             </div>
             <div class="page3content">
                 <div class="flex-row-nowrap">
                     <div class="p3-item mgr-30 p3-item1 cursor-pointer">
                         <div class="p3-photo p3-photo1"></div>
-                        <div class="p3-overlay1">
+                        <div class="p3-overlay">
                             <div class="flex-column height100">
                                 <div class="flex-row-nowrap">
                                     <div class='p3-link'></div>
@@ -159,13 +158,13 @@
                             </div>
                         </div>
                         <div class="p3-item-content flex-column p3-item-content1">
-                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item1-title">Claritas Etiam Processus</div>
+                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item-title">Claritas Etiam Processus</div>
                             <div class="f-MontserratLight-14 fc-d1d1d1 pdl30 mgt-10 p3-item1-content">Photography Nature</div>
                         </div>
                     </div>
-                    <div class="p3-item mgr-30 p3-item2 cursor-pointer">
+                    <div class="p3-item mgr-30 cursor-pointer">
                         <div class="p3-photo p3-photo2"></div>
-                        <div class="p3-overlay2">
+                        <div class="p3-overlay">
                             <div class="flex-column height100">
                                 <div class="flex-row-nowrap">
                                     <div class='p3-link'></div>
@@ -174,13 +173,13 @@
                             </div>
                         </div>
                         <div class="p3-item-content flex-column p3-item-content2">
-                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item2-title">Claritas Etiam Processus</div>
+                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item-title">Claritas Etiam Processus</div>
                             <div class="f-MontserratLight-14 fc-d1d1d1 pdl30 mgt-10 p3-item2-content">Photography Nature</div>
                         </div>
                     </div>
-                    <div class="p3-item mgr-30 p3-item3 cursor-pointer">
+                    <div class="p3-item cursor-pointer">
                         <div class="p3-photo p3-photo3"></div>
-                        <div class="p3-overlay3">
+                        <div class="p3-overlay">
                             <div class="flex-column height100">
                                 <div class="flex-row-nowrap">
                                     <div class='p3-link'></div>
@@ -189,15 +188,15 @@
                             </div>
                         </div>
                         <div class="p3-item-content flex-column p3-item-content3">
-                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item3-title">Claritas Etiam Processus</div>
+                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item-title">Claritas Etiam Processus</div>
                             <div class="f-MontserratLight-14 fc-d1d1d1 pdl30 mgt-10 p3-item3-content">Photography Nature</div>
                         </div>
                     </div>
                 </div>
                 <div class="flex-row-nowrap mgt-30 cursor-pointer">
-                    <div class="p3-item mgr-30 p3-item4">
+                    <div class="p3-item mgr-30 cursor-pointer">
                         <div class="p3-photo p3-photo4"></div>
-                        <div class="p3-overlay4">
+                        <div class="p3-overlay">
                             <div class="flex-column height100">
                                 <div class="flex-row-nowrap">
                                     <div class='p3-link'></div>
@@ -206,13 +205,13 @@
                             </div>
                         </div>
                         <div class="p3-item-content flex-column p3-item-content4">
-                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item4-title">Claritas Etiam Processus</div>
+                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item-title">Claritas Etiam Processus</div>
                             <div class="f-MontserratLight-14 fc-d1d1d1 pdl30 mgt-10 p3-item4-content">Photography Nature</div>
                         </div>
                     </div>
-                    <div class="p3-item mgr-30 p3-item5 cursor-pointer">
+                    <div class="p3-item mgr-30 cursor-pointer">
                         <div class="p3-photo p3-photo5"></div>
-                        <div class="p3-overlay5">
+                        <div class="p3-overlay">
                             <div class="flex-column height100">
                                 <div class="flex-row-nowrap">
                                     <div class='p3-link'></div>
@@ -221,13 +220,13 @@
                             </div>
                         </div>
                         <div class="p3-item-content flex-column p3-item-content5">
-                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item5-title">Claritas Etiam Processus</div>
+                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item-title">Claritas Etiam Processus</div>
                             <div class="f-MontserratLight-14 fc-d1d1d1 pdl30 mgt-10 p3-item5-content">Photography Nature</div>
                         </div>
                     </div>
-                    <div class="p3-item mgr-30 p3-item6 cursor-pointer">
+                    <div class="p3-item cursor-pointer">
                         <div class="p3-photo p3-photo6"></div>
-                        <div class="p3-overlay6">
+                        <div class="p3-overlay">
                             <div class="flex-column height100">
                                 <div class="flex-row-nowrap">
                                     <div class='p3-link'></div>
@@ -236,13 +235,13 @@
                             </div>
                         </div>
                         <div class="p3-item-content flex-column p3-item-content6">
-                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item6-title">Claritas Etiam Processus</div>
+                            <div class="f-RalewayMedium-20 fc-c7b299 pdl30 p3-item-title">Claritas Etiam Processus</div>
                             <div class="f-MontserratLight-14 fc-d1d1d1 pdl30 mgt-10 p3-item6-content">Photography Nature</div>
                         </div>
                     </div>
                 </div>
                 <div class="flex-row-nowrap">
-                    <button class="p3-button f-RalewayExtraBold-14 fc-white mgt-10 cursor-pointer" type="button">LOAD MORE</button>
+                    <button class="button f-RalewayExtraBold-14 fc-white mgt-10 cursor-pointer" type="button">LOAD MORE</button>
                 </div>
             </div>
         </div>
@@ -355,7 +354,7 @@
                             <div class="f-MontserratLight-14 fc-c7b299 pdl30 pdr30">Read More</div>
                         </div>
                     </div>
-                    <div class="p6-items mgr-30 p6-item3 cursor-pointer">
+                    <div class="p6-items p6-item3 cursor-pointer">
                         <div class="p6-photo3"></div>
                         <div class="p6-calendar">
                             <div class="p6-date f-MontserratLight-24 fc-white">30</div>
@@ -369,8 +368,8 @@
                     </div>
                 </div>
                 <div class="flex-row-nowrap mgt-39">
-                    <img class="mgr-4" src="./images/page6/page6-left.png">
-                    <img src="./images/page6/page6-right.png">
+                    <div class="mgr-4 p6-left cursor-pointer"></div>
+                    <div class="p6-right cursor-pointer"></div>
                 </div>
             </div>
         </div>
