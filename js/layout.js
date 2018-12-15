@@ -8,17 +8,17 @@ var p1_content = [
     {
         title : 'Modern and Unique Design',
         name : 'ABC PSD Template',
-        content : 'Nam liber tempor cum soluta nobis eleifend option congue nihil imper- diet doming id quod mazim placerat facer possim assum'
+        content : 'Nam liber tempor cum soluta imper- diet doming id quod mazim placerat facer possim assum'
     },
     {
         title : 'Unique and Modern Design',
         name : 'DEF PSD Template',
-        content : 'Nam liber tempor cum soluta nobis eleifend option congue nihil imper- diet doming id quod mazim placerat facer possim assum'
+        content : 'Nam eleifend option congue nihil imper- diet possim assum'
     },
     {
         title : 'Modern and Unique Design',
         name : 'GHI PSD Template',
-        content : 'Nam liber tempor cum soluta nobis eleifend option congue nihil imper- diet doming id quod mazim placerat facer possim assum'
+        content : 'Nam liber tempor id quod mazim placerat facer possim assum'
     }
 ];
 

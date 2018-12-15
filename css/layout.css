@@ -34,7 +34,7 @@ a { text-decoration: none; color: white;}
     background-color: #998675;
     border-color: #998675;
 }
-.button:hover { background-color: #ffffff; color: #998675; }
+.button:hover { background-color: #ffffff; color: #998675; transition: all 0.3s ease; }
 
 /* ============================Page 1============================ */
 
@@ -164,8 +164,6 @@ a { text-decoration: none; color: white;}
     margin: auto;
 }
 
-/* .p2-menutitle1:hover, .p2-menutitle2:hover, .p2-menutitle3:hover, .p2-menutitle4:hover { color: #c7b299; } */
-
 .p2-webappdesign, .p2-development, .p2-customization, .p2-marketing {
     width: 52px;
     height: 52px; 
@@ -176,17 +174,19 @@ a { text-decoration: none; color: white;}
 .p2-customization { background-image: url('../images/page2/page2-icon-customization.png'); margin: auto;}
 .p2-marketing { background-image: url('../images/page2/page2-icon-marketing.png'); margin: auto; }
 
-.p2-submenu1:hover .p2-webappdesign { background-image: url('../images/page2/page2-icon-webappdesign-overlay.png'); }
-.p2-submenu2:hover .p2-development { background-image: url('../images/page2/page2-icon-development-overlay.png')}
-.p2-submenu3:hover .p2-customization { background-image: url('../images/page2/page2-icon-customization-overlay.png')}
-.p2-submenu4:hover .p2-marketing { background-image: url('../images/page2/page2-icon-marketing-overlay.png')}
+.p2-submenu:hover .p2-webappdesign { background-image: url('../images/page2/page2-icon-webappdesign-overlay.png'); transition: all 0.3s ease; }
+.p2-submenu:hover .p2-development { background-image: url('../images/page2/page2-icon-development-overlay.png'); transition: all 0.3s ease; }
+.p2-submenu:hover .p2-customization { background-image: url('../images/page2/page2-icon-customization-overlay.png'); transition: all 0.3s ease; }
+.p2-submenu:hover .p2-marketing { background-image: url('../images/page2/page2-icon-marketing-overlay.png'); transition: all 0.3s ease; }
 
-.p2-submenu1:hover .p2-menutitle, .p2-submenu2:hover .p2-menutitle, .p2-submenu3:hover .p2-menutitle, .p2-submenu4:hover .p2-menutitle {
+.p2-submenu:hover .p2-menutitle {
     color: #c7b299;
+    transition: all 0.3s ease; 
 }
 
-.p2-submenu1:hover .p2_, .p2-submenu2:hover .p2_, .p2-submenu3:hover .p2_, .p2-submenu4:hover .p2_ {
+.p2-submenu:hover .p2_ {
     border-color: #c7b299;
+    transition: all 0.3s ease; 
 }
 
 /* ===============================Page 3===================================== */
@@ -235,16 +235,20 @@ a { text-decoration: none; color: white;}
 
 .p3-item:hover .p3-overlay{ 
     display: block; 
+    transition: all 0.5s ease; 
 }
 .p3-item:hover .p3-photo { 
     filter: brightness(60%); 
+    transition: all 0.5s ease; 
 }
 .p3-item:hover .p3-item-content { 
     background-color: #362f2d; 
     color: #c7b299;
+    transition: all 0.5s ease;
 }
 .p3-item:hover .p3-item-title { 
     color: #ffffff; 
+    transition: all 0.5s ease; 
 }
 
 .p3-photo1 { background: url('../images/page3/page3-photo1.png') center center; background-size: auto 100%; }
@@ -276,6 +280,7 @@ a { text-decoration: none; color: white;}
 .p3-btn:hover {
     border-color: #998675;
     color: #998675;
+    transition: all 0.5s ease;
 }
 /* ======================================Page 4============================== */
 .page4 { height: 710px; position: relative; }
@@ -425,9 +430,9 @@ a { text-decoration: none; color: white;}
 .p6-item1:hover .p6-photo1, .p6-item2:hover .p6-photo2, .p6-item3:hover .p6-photo3 { filter: brightness(40%); }
 .p6-items:hover .p6-item-title { color: #c7b299; }
 .p6-items:hover .p6-item-content { color: #ffffff; }
-.p6-items:hover .p6-items-content { background-color: #362f2d; }
-.p6-items:hover .p6-date { background-color: #c7b299; }
-.p6-items:hover .p6-month { background-color: #a48d72;}
+.p6-items:hover .p6-items-content { background-color: #362f2d; transition: all 0.5s ease; }
+.p6-items:hover .p6-date { background-color: #c7b299; transition: all 0.5s ease; }
+.p6-items:hover .p6-month { background-color: #a48d72; transition: all 0.5s ease; }
 
 /* ======================================Page 7================================== */
 .page7 { height: 1112px; }
@@ -833,3 +838,13 @@ a { text-decoration: none; color: white;}
 /* ===================================display========================================= */
 .display-none { display: none; }
 .display-block { display: block; }
+/* 
+@media only screen and (max-width: 900px) {
+    .page3 { height: 2638px;}
+
+    .p3-content { height: 2386px;}
+
+    .flex-row-nowrap { flex-wrap: wrap; }
+
+    .p3-item { width: 100%; }
+} */
