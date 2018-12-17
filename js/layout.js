@@ -72,9 +72,7 @@ function changeStateTabPage3(after, before) {
     if( after === p3_tab_current ) return;
     else {
         p3_tab_current = after;
-        document.getElementById(after).classList.remove('p3-btn');
         document.getElementById(after).classList.add('p3-btn-active');
         document.getElementById(before).classList.remove('p3-btn-active');
-        document.getElementById(before).classList.add('p3-btn');
     }
 }

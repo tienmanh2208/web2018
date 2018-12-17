@@ -121,12 +121,13 @@ a { text-decoration: none; color: white;}
 }
 
 .p2-submenu {
-    min-width: 200px                                                                                                                        ;
+    min-width: 200px;
     width: 23.23%;
     height: 344px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 15px 0 15px;
 }
 
 .p2-img {
@@ -244,6 +245,7 @@ a { text-decoration: none; color: white;}
     padding-left: 26px;
     padding-right: 26px;
     margin-right: 10px;
+    line-height: 32px;
 }
 
 .p3-photo { width: 100%; height: 238px; }
@@ -411,6 +413,7 @@ a { text-decoration: none; color: white;}
     width: 370px;
     height: 395px;
     position: relative;
+    margin: 0 15px 15px 15px;
 }
 
 .p6-photo1, .p6-photo2, .p6-photo3 { width: 100%; height: 220px; }
@@ -872,8 +875,6 @@ a { text-decoration: none; color: white;}
     }
 
     .p2-submenu { width: 40%; }
-
-    .p2-submenu2 { margin-right: 0; }
 
     .page7-logos { left: 10%;}
 
