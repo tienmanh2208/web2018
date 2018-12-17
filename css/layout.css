@@ -65,6 +65,10 @@ a { text-decoration: none; color: white;}
     position: relative;
 }
 
+.p1-menu-icon {
+    margin-top: 54px;
+}
+
 .page1content {
     width: 100%;
     height: 754px;
@@ -102,7 +106,7 @@ a { text-decoration: none; color: white;}
 /* =================================Page 2================================ */
 .page2 { height: 1225px; }
 
-.page2menu { height: 344px; margin: auto; }
+.page2menu { height: 344px; margin: auto; margin-bottom: 110px;}
 
 .page2content {
     max-width: 1920px;
@@ -160,6 +164,7 @@ a { text-decoration: none; color: white;}
     border-width: 1px;
     border-color: #ffffff;
     margin: auto;
+    margin-top: 30px;
 }
 
 .p2-webappdesign, .p2-development, .p2-customization, .p2-marketing {
@@ -187,6 +192,12 @@ a { text-decoration: none; color: white;}
     transition: all 0.3s ease; 
 }
 
+.p2-content-content {
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-top: 22px;
+    color: #8c8c8c;
+}
 /* ===============================Page 3===================================== */
 .page3 { height: 1166px; }
 
@@ -214,6 +225,7 @@ a { text-decoration: none; color: white;}
     border-style: solid;
     border-width: thin;
     border-color: #ebebeb;
+    width: 120px;
 }
 
 .p3-content {
@@ -225,6 +237,12 @@ a { text-decoration: none; color: white;}
     width: 31.5%;
     height: 338px;
     position: relative;
+}
+
+#p3-all {
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-right: 10px;
 }
 
 .p3-photo { width: 100%; height: 238px; }
@@ -375,6 +393,7 @@ a { text-decoration: none; color: white;}
     width: 30px;
     border-color: white;
     margin: auto;
+    margin-top: 25px;
 }
 
 .p5-icon-counter {
@@ -431,7 +450,7 @@ a { text-decoration: none; color: white;}
 }
 
 .p6-left, .p6-right { width: 25px; height: 25px;}
-.p6-left { background-image: url('../images/page6/page6-left.png'); }
+.p6-left { background-image: url('../images/page6/page6-left.png'); margin-right: 4px;}
 .p6-right { background-image: url('../images/page6/page6-right.png'); }
 .p6-left:hover { background-image: url('../images/page6/page6-left-hover.png'); }
 .p6-right:hover { background-image: url('../images/page6/page6-right-hover.png'); }
@@ -510,54 +529,33 @@ a { text-decoration: none; color: white;}
     border-color: #252525;
 }
 
+.p7-content-title {
+    color: white;
+    margin-top: 103px;
+}
 /* ============================Width============================== */
-.width25 { width: 25% }
-.width40 { width: 40% }
 .width48 { width: 48% }
-.width65 { width: 65% }
-.width75 { width: 75% }
-.width100 { width: 100% }
-.width120 { width: 120px; }
 
 /* ============================Height============================== */
 .height100 { height: 100%; }
 
 /* ============================Padding============================== */
-.pdl-26 { padding-left: 26px }
-.pdl-30 { padding-left: 30% }
 .pdl30 { padding-left: 30px }
 .pdr30 { padding-right: 30px }
-.pdr-26 { padding-right: 26px }
-.pdr-30 { padding-right: 30% }
 .pdt-5 { padding-top: 5px }
-.pdt-110 { padding-top: 110px }
 
 /* ============================Margin============================== */
 .mg-auto { margin: auto; }
 
 .mgt-10 { margin-top: 10px; }
-.mgt-22 { margin-top: 22px; }
 .mgt-25 { margin-top: 25px; }
-.mgt-30 { margin-top: 30px; }
 .mgt-35 { margin-top: 35px; }
 .mgt-39 { margin-top: 39px; }
-.mgt-45 { margin-top: 45px; }
-.mgt-50 { margin-top: 50px; }
-.mgt-54 { margin-top: 54px; }
-.mgt-60 { margin-top: 60px; }
-.mgt-78 { margin-top: 78px; }
-.mgt-103 { margin-top: 103px; }
-.mgt-110 { margin-top: 110px; }
-.mgt-245 { margin-top: 245px; }
-.mgr-4 { margin-right: 4px; }
 .mgr-10 { margin-right: 10px; }
-.mgr-20 { margin-right: 20px; }
 .mgr-29 { margin-right: 29px; }
 .mgr-30 { margin-right: 30px; }
 .mgr-57 { margin-right: 57px; }
 .mgr-85 { margin-right: 85px; }
-.mgb-110 {margin-bottom: 110px; }
-.mgl-30 { margin-left: 30px; }
 
 /* ============================Text align============================== */
 .ta-center-136 {
@@ -769,9 +767,6 @@ a { text-decoration: none; color: white;}
 .fc-hashtag { color: #00bff3; }
 .fc-logos { color: #959595; }
 
-/* ============================Background colors============================== */
-.bgc-362f2d { background-color: #362f2d; }
-
 /* ============================Line Height============================== */
 .lh-28 {
     justify-items: center;
@@ -833,15 +828,12 @@ a { text-decoration: none; color: white;}
     .mgr-29 { margin-right: 5px; }
 
     .mgr-57 { margin-right: 20px; }
-
-    /* .page1menu, .page2menu, .page2footercontent, .page3header, .page3content, .page4content, .page5frame, .page5menu, .page6content, .page7logos, .page7content, .page7footer {
-        width: 80%;
-    } */
 }
 
 /* ===================================display========================================= */
 .display-none { display: none; }
 .display-block { display: block; }
+
 /* 
 @media only screen and (max-width: 900px) {
     .page3 { height: 2638px;}
