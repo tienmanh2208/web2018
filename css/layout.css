@@ -838,23 +838,25 @@ a { text-decoration: none; color: white;}
 }
 
 @media only screen and (max-width: 1000px) {
-    .f-MontserratLight-16 { font-size: 14px; }
+    .f-MontserratLight-16 { font-size: 22px; }
 
-    .f-MontserratLight-14 { font-size: 10px; }
+    .f-MontserratLight-14 { font-size: 20px; }
 
-    .f-MontserratLight-12 { font-size: 8px; }
+    .f-MontserratLight-12 { font-size: 12px; }
 
-    .f-RalewaySemiBold-22 { font-size: 18px; }
+    .f-RalewaySemiBold-22 { font-size: 22px; }
 
-    .f-RalewayMedium-20 { font-size: 16px; }
+    .f-RalewaySemiBold-30 { font-size: 34px; }
 
-    .f-MontserratUltraLight-48 { font-size: 35px; }
+    .f-RalewayMedium-20 { font-size: 25px; }
 
-    .lh-28 { line-height: 24px; }
+    .f-MontserratUltraLight-48 { font-size: 30px; }
+
+    .lh-28 { line-height: 35px; }
 
     .mgr-29 { margin-right: 10px; }
 
-    .f-RalewayRegular-34 { font-size: 29px; }
+    .f-RalewayRegular-34 { font-size: 34px; }
 
     .flex-row-nowrap { flex-wrap: wrap; }
 
@@ -872,7 +874,27 @@ a { text-decoration: none; color: white;}
 
     .page7logos { left: 10%;}
 
+    .p3-content { width: 100%; }
+
+    .page3header { height: auto; padding-bottom: 50px;}
+
+    .p2-content-content { padding: 0 0;}
+
     .page4content { left: 10%; }
+
+    .page5frame { height: auto;}
+
+    .page5menu { width: 100%; }
+
+    .page5photo, .page5content { position: relative; width: 100%;}
+
+    .page5content { height: auto; padding-top: 50px; padding-bottom: 50px;}
+
+    .p5-photo { height: 90%; width: auto; left: 30%;}
+
+    .p6-text { width: 100%; }
+
+    .width48 { width: 100%; }
 }
 
 /* ===================================display========================================= */
