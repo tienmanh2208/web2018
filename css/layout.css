@@ -15,7 +15,7 @@ body { margin: 0px; font-size: 24pt; cursor: default;}
 
 .page1, .page2, .page3, .page4, .page5, .page6, .page7 { width: 100%; }
 
-.page1menu, .page2menu, .page2footercontent, .page3header, .page3content, .page4content, .page5frame, .page5menu, .page6content, .page7logos, .page7content, .page7footer {
+.page1-menu, .page2-menu, .page2footercontent, .page3-header, .page3-content, .page4-content, .page5-frame, .page5-menu, .page6-content, .page7-logos, .page7-content, .page7-footer {
     width: 61.2%;
 }
 
@@ -52,12 +52,12 @@ a { text-decoration: none; color: white;}
 
 #p1-content { margin-top: 18px; }
 
-.page1header {
+.page1-header {
     width: 274px;
     height: 136px;
 }
 
-.page1menu {
+.page1-menu {
     max-width: 1920px;
     height: 136px;
     margin: auto;
@@ -103,7 +103,7 @@ a { text-decoration: none; color: white;}
     width: 15px;
 }
 /* =================================Page 2================================ */
-.page2menu { margin: auto; margin-bottom: 110px;}
+.page2-menu { margin: auto; margin-bottom: 110px;}
 
 .page2content {
     max-width: 1920px;
@@ -202,12 +202,12 @@ a { text-decoration: none; color: white;}
 }
 /* ===============================Page 3===================================== */
 
-.page3header {
+.page3-header {
     height: 252px;
     margin: auto;
 }
 
-.page3content {
+.page3-content {
     max-width: 1175px;
     margin: auto;
 }
@@ -308,7 +308,7 @@ a { text-decoration: none; color: white;}
     filter: brightness(60%);
 }
 
-.page4content {
+.page4-content {
     position: absolute;
     top: 0;
     left: 19.4%;
@@ -337,7 +337,7 @@ a { text-decoration: none; color: white;}
 /* ==============================Page 5============================= */
 .page5 { position: relative; }
 
-.page5frame {
+.page5-frame {
     max-width: 1175px;
     height: 696px;
     margin: auto;
@@ -366,7 +366,7 @@ a { text-decoration: none; color: white;}
     background-image: linear-gradient(to right,#211b19, #4e3427);
 }
 
-.page5menu {
+.page5-menu {
     height: 302px;
     margin: auto;
 }
@@ -402,7 +402,7 @@ a { text-decoration: none; color: white;}
 }
 /* =======================================Page 6================================== */
 
-.page6content {
+.page6-content {
     margin: auto;
 }
 
@@ -489,14 +489,14 @@ a { text-decoration: none; color: white;}
     background: #000000;
 }
 
-.page7logos {
+.page7-logos {
     height: 492px;
     position: absolute;
     top: 0px;
     left: 19.4%;
 }
 
-.page7content {
+.page7-content {
     max-width: 1175px;
     /* height: 508px; */
     margin: auto;
@@ -509,7 +509,7 @@ a { text-decoration: none; color: white;}
     margin-right: 35px;
 }
 
-.page7footer {
+.page7-footer {
     max-width: 1175px;
     height: 112px;
     margin: auto;
@@ -866,25 +866,25 @@ a { text-decoration: none; color: white;}
 
     .p7-content-col { height: auto; width: 80%; padding-bottom: 30px; }
 
-    .page1menu, .page2menu, .page2footercontent, .page3header, .page3content, .page4content, .page5frame, .page5menu, .page6content, .page7logos, .page7content, .page7footer {
+    .page1-menu, .page2-menu, .page2footercontent, .page3-header, .page3-content, .page4-content, .page5-frame, .page5-menu, .page6-content, .page7-logos, .page7-content, .page7-footer {
         width: 80%;
     }
 
     .p2-submenu { width: 40%; }
 
-    .page7logos { left: 10%;}
+    .page7-logos { left: 10%;}
 
     .p3-content { width: 100%; }
 
-    .page3header { height: auto; padding-bottom: 50px;}
+    .page3-header { height: auto; padding-bottom: 50px;}
 
     .p2-content-content { padding: 0 0;}
 
-    .page4content { left: 10%; }
+    .page4-content { left: 10%; }
 
-    .page5frame { height: auto;}
+    .page5-frame { height: auto;}
 
-    .page5menu { width: 100%; }
+    .page5-menu { width: 100%; }
 
     .page5photo, .page5content { position: relative; width: 100%;}
 
@@ -895,6 +895,14 @@ a { text-decoration: none; color: white;}
     .p6-text { width: 100%; }
 
     .width48 { width: 100%; }
+
+    .p3-photo1, .p3-photo2, .p3-photo3, .p3-photo4, .p3-photo5, .p3-photo6 {
+        background-size: 100% auto;
+    }
+
+    .p6-photo1, .p6-photo2, .p6-photo3 {
+        background-size: 100% auto;
+    }
 }
 
 /* ===================================display========================================= */
