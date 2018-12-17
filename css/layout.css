@@ -237,6 +237,7 @@ a { text-decoration: none; color: white;}
     width: 31.5%;
     height: 338px;
     position: relative;
+    margin: 15px;
 }
 
 #p3-all {
@@ -872,6 +873,8 @@ a { text-decoration: none; color: white;}
 
     .p2-submenu { width: 40%; }
 
+    .p2-submenu2 { margin-right: 0; }
+
     .page7-logos { left: 10%;}
 
     .p3-content { width: 100%; }
@@ -903,6 +906,8 @@ a { text-decoration: none; color: white;}
     .p6-photo1, .p6-photo2, .p6-photo3 {
         background-size: 100% auto;
     }
+
+    /* .p3-item1, .p3-item2, .p3-item4, .p3 */
 }
 
 /* ===================================display========================================= */
