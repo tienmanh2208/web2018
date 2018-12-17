@@ -51,6 +51,8 @@ a { text-decoration: none; color: white;}
     filter: brightness(50%);
 }
 
+#p1-content { margin-top: 18px; }
+
 .page1header {
     width: 274px;
     height: 136px;
@@ -78,11 +80,7 @@ a { text-decoration: none; color: white;}
     clear: both;
 }
 
-/* .p1-img-logos {
-    width: 23.68%;
-    height: 23.68%;
-    position: relative;
-} */
+.p1-img-logos { margin-top: 35px; }
 
 .p1-menu:hover a{ color: #c7b299; }
 
@@ -378,6 +376,11 @@ a { text-decoration: none; color: white;}
     border-color: white;
     margin: auto;
 }
+
+.p5-icon-counter {
+    margin-top: 12px;
+    color: white;
+}
 /* =======================================Page 6================================== */
 .page6 { height: 760px; }
 
@@ -419,6 +422,12 @@ a { text-decoration: none; color: white;}
     height: 25px;
     background-color: #252525;
     border-radius: 0 0 5px 5px;
+}
+
+.p6-text {
+    color: #8c8c8c;
+    margin-top: 12px;
+    width: 65%;
 }
 
 .p6-left, .p6-right { width: 25px; height: 25px;}
@@ -494,6 +503,7 @@ a { text-decoration: none; color: white;}
 }
 
 ._7 {
+    margin-top: 15px;
     width: 100%;
     border-top-style: solid;
     border-width: thin;
@@ -526,9 +536,6 @@ a { text-decoration: none; color: white;}
 .mg-auto { margin: auto; }
 
 .mgt-10 { margin-top: 10px; }
-.mgt-12 { margin-top: 12px; }
-.mgt-15 { margin-top: 15px; }
-.mgt-18 { margin-top: 18px; }
 .mgt-22 { margin-top: 22px; }
 .mgt-25 { margin-top: 25px; }
 .mgt-30 { margin-top: 30px; }
@@ -753,20 +760,17 @@ a { text-decoration: none; color: white;}
 
 /* ============================Font colors============================== */
 .fc-white { color: #ffffff; }
-.fc-c7b299 { color: #c7b299; }
-.fc-8c8c8c { color: #8c8c8c; }
-.fc-555555 { color: #555555; }
-.fc-615855 { color: #615855; }
-.fc-d1d1d1 { color: #d1d1d1; }
-.fc-363636 { color: #363636; }
-.fc-00bff3 { color: #00bff3; }
-.fc-959595 { color: #959595; }
+.fc-menu { color: #c7b299; }
+.fc-text { color: #8c8c8c; }
+.fc-darkgray { color: #555555; }
+.fc-footer2 { color: #615855; }
+.fc-subtitle { color: #d1d1d1; }
+.fc-timedark { color: #363636; }
+.fc-hashtag { color: #00bff3; }
+.fc-logos { color: #959595; }
 
 /* ============================Background colors============================== */
 .bgc-362f2d { background-color: #362f2d; }
-
-/* ============================Order============================== */
-.order1 { order: 1; }
 
 /* ============================Line Height============================== */
 .lh-28 {
