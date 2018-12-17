@@ -4,9 +4,10 @@
     <title>Layout</title>
     <link rel="stylesheet" href="./css/layout.css">
     <script src="./js/layout.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
-    <div class='frame'>
+    <div class='frame' id="frame">
         <!-- ===============================Page 1============================= -->
         <div class='p1-blur absolute-left'></div>
         <div class="page1">
@@ -20,14 +21,17 @@
                 <div class="absolute-right ta-center-136 f-MontserratLight-14 fc-white"  style="width: 75%;">
                     <a href="#"><img class="float-right p1-menu-icon p1-menu" src="./images/page1/page1-icon-search.png"></a>
                     <a href="#"><img class="float-right p1-menu-icon p1-menu" src="./images/page1/page1-icon-cart.png" style="margin-right: 20px;"></a>
-                    <div class="float-right mgr-57 p1-menu"><a href="#">Contact</a></div>
-                    <div class="float-right mgr-29 p1-menu"><a href="#">Shortcodes</a></div>
-                    <div class="float-right mgr-29 p1-menu"><a href="#">Pricing</a></div>
-                    <div class="float-right mgr-29 p1-menu"><a href="#">Blog</a></div>
-                    <div class="float-right mgr-29 p1-menu"><a href="#">Features</a></div>
-                    <div class="float-right mgr-29 p1-menu"><a href="#">Portfollo</a></div>
-                    <div class="float-right mgr-29 p1-menu"><a href="#">Us</a></div>
-                    <div class="float-right mgr-29 p1-menu"><a href="#">Home</a></div>
+                    <i class="fas fa-bars p1-header-option" id="p1-header-option"></i>
+                    <div class="float-right p1-menu-text">
+                        <div class="float-right mgr-57 p1-menu"><a href="#">Contact</a></div>
+                        <div class="float-right mgr-29 p1-menu"><a href="#">Shortcodes</a></div>
+                        <div class="float-right mgr-29 p1-menu"><a href="#">Pricing</a></div>
+                        <div class="float-right mgr-29 p1-menu"><a href="#">Blog</a></div>
+                        <div class="float-right mgr-29 p1-menu"><a href="#">Features</a></div>
+                        <div class="float-right mgr-29 p1-menu"><a href="#">Portfollo</a></div>
+                        <div class="float-right mgr-29 p1-menu"><a href="#">Us</a></div>
+                        <div class="float-right mgr-29 p1-menu"><a href="#">Home</a></div>
+                    </div>
                 </div>
             </div>
             <div class="slideleft flex-column">
@@ -63,6 +67,17 @@
                     <img id="p1-slide3" class="p1-img-circle cursor-pointer" src="./images/page1/page1-circle.png">
                     <img id="p1-slide4" class="p1-img-circle cursor-pointer" src="./images/page1/page1-circle.png">
                 </div>
+            </div>
+            <div class="p1-sidenav" id="p1-sidenav">
+                <a id="p1-sidenav-close" class="sidenav-menu">&times;</a>
+                <div class="clearfloat sidenav-menu"><a href="#">Contact</a></div>
+                <div class="sidenav-menu"><a href="#">Shortcodes</a></div>
+                <div class="sidenav-menu"><a href="#">Pricing</a></div>
+                <div class="sidenav-menu"><a href="#">Blog</a></div>
+                <div class="sidenav-menu"><a href="#">Features</a></div>
+                <div class="sidenav-menu"><a href="#">Portfollo</a></div>
+                <div class="sidenav-menu"><a href="#">Us</a></div>
+                <div class="sidenav-menu"><a href="#">Home</a></div>
             </div>
         </div>
         <!-- ==============================Page 2============================ -->
@@ -131,12 +146,21 @@
             <div class="page3-header ta-center">
                 <div class="f-RalewaySemiBold-30 fc-darkgray" style="margin-top: 78px">Our Lastest Projects.</div>
                 <div class="p3-content f-MontserratLight-16 fc-text lh-28" style="margin-top: 22px;">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
-                <div class="flex-row-nowrap f-MontserratLight-14 fc-text mgt-39">
+                <div class="p3-tab flex-row-nowrap f-MontserratLight-14 fc-text mgt-39">
                     <div id="p3-all" class="p3-btn-active cursor-pointer">All</div>
                     <div id="p3-webdesign" class="p3-btn mgr-10 cursor-pointer">Web Design</div>
                     <div id="p3-mobileapp" class="p3-btn mgr-10 cursor-pointer">Mobile App</div>
                     <div id="p3-illustration" class="p3-btn mgr-10 cursor-pointer">Illustration</div>
                     <div id="p3-photography" class="p3-btn cursor-pointer">Photography</div>
+                </div>
+                <div class="flex-row-stable">
+                    <select class="p3-select f-MontserratLight-14">
+                        <option value="All">All</option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="Mobile App">Mobile App</option>
+                        <option value="Illustration">Illustration</option>
+                        <option value="Photography">Photography</option>
+                    </select>
                 </div>
             </div>
             <div class="page3-content">

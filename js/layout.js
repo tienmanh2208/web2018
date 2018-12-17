@@ -39,6 +39,16 @@ window.onload = function(ev){
         } else { changeContentOfPage1(p1_content[0] + 1, p1_content[0]++); }
     }
 
+    document.getElementById('p1-header-option').onclick =  function () {
+        document.getElementById('p1-sidenav').style.width = '100%';
+        document.body.style.backgroundColor = "rgba(0,0,0,0.8)";
+    }
+
+    document.getElementById('p1-sidenav-close').onclick = function () {
+        document.getElementById('p1-sidenav').style.width = '0px';
+        document.body.style.backgroundColor = "white";
+    }
+
     document.getElementById('p3-all').onclick = function () { changeStateTabPage3('p3-all', p3_tab_current); }
     document.getElementById('p3-webdesign').onclick = function () { changeStateTabPage3('p3-webdesign', p3_tab_current); }
     document.getElementById('p3-mobileapp').onclick = function () { changeStateTabPage3('p3-mobileapp', p3_tab_current); }
