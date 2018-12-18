@@ -44,7 +44,8 @@ a { text-decoration: none; color: white;}
 .p1-blur {
     width: 100%;
     height: 1026px;
-    background: url('../images/page1/page1-background.png') center;
+    background-image: url('../images/page1/page1-background.png');
+    background-position: 40% 0%;
     filter: brightness(40%);
 }
 
@@ -865,8 +866,6 @@ a { text-decoration: none; color: white;}
 
     .lh-28 { line-height: 24px; }
 
-    .p1-menu { margin-right: 10px; }
-
     .f-RalewayRegular-34 { font-size: 29px; }
 
     .page1-menu, .page2-menu, .page2footercontent, .page3-header, .page3-content, .page4-content, .page5-frame, .page5-menu, .page6-content, .page7-logos, .page7-content, .page7-footer {
@@ -888,6 +887,10 @@ a { text-decoration: none; color: white;}
 
 @media only screen and (max-width: 1500px) {
     .page2content { height: 500px;}
+}
+
+@media only screen and (max-width: 1350px) {
+    .p1-menu { margin-right: 10px; }
 }
 
 @media only screen and (max-width: 1250px) {
