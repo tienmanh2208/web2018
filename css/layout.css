@@ -925,6 +925,8 @@ a { text-decoration: none; color: white;}
 
     .flex-row-nowrap { flex-wrap: wrap; }
 
+    .slideleft, .slideright { width: 10%; }
+
     .p3-item { width: 100%; }
 
     .p6-items { width: 100%; }
