@@ -106,8 +106,9 @@ a { text-decoration: none; color: white;}
     margin-right: 20px; 
     float: right;
     font-size: 25px;
-    display: none;
 }
+
+.icon-expandmenu { display: none; }
 
 .page1content {
     width: 100%;
@@ -872,7 +873,7 @@ a { text-decoration: none; color: white;}
 
     .f-MontserratLight-16 { font-size: 12px; }
 
-    .f-MontserratLight-14 { font-size: 8px; }
+    /* .f-MontserratLight-14 { font-size: 8px; } */
 
     .f-MontserratLight-12 { font-size: 6px; }
 
@@ -891,6 +892,14 @@ a { text-decoration: none; color: white;}
     .mgr-29 { margin-right: 5px; }
 
     .mgr-57 { margin-right: 20px; }
+
+    .page1-menu, .page2-menu, .page2footercontent, .page3-header, .page3-content, .page4-content, .page5-frame, .page5-menu, .page6-content, .page7-logos, .page7-content, .page7-footer {
+        width: 80%;
+    }
+
+    .page4-content { left: 10%; }
+
+    .page7-logos { left: 10%;}
 }
 
 @media only screen and (max-width: 1000px) {
@@ -922,21 +931,13 @@ a { text-decoration: none; color: white;}
 
     .p7-content-col { height: auto; width: 80%; padding-bottom: 30px; }
 
-    .page1-menu, .page2-menu, .page2footercontent, .page3-header, .page3-content, .page4-content, .page5-frame, .page5-menu, .page6-content, .page7-logos, .page7-content, .page7-footer {
-        width: 80%;
-    }
-
     .p2-submenu { width: 40%; }
-
-    .page7-logos { left: 10%;}
 
     .p3-content { width: 100%; }
 
     .page3-header { height: auto; padding-bottom: 50px;}
 
     .p2-content-content { padding: 0 0;}
-
-    .page4-content { left: 10%; }
 
     .page5-frame { height: auto;}
 
@@ -966,6 +967,8 @@ a { text-decoration: none; color: white;}
     /* .p3-item1, .p3-item2, .p3-item4, .p3 */
 
     .p1-menu-text { display: none; }
+
+    .icon-expandmenu { display: block; }
 }
 
 /* ===================================display========================================= */
