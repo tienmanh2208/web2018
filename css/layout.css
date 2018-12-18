@@ -498,6 +498,12 @@ a { text-decoration: none; color: white;}
     left: 20px;
 }
 
+.p6-date, .p6-month {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .p6-date {
     width: 100%;
     height: 35px;
