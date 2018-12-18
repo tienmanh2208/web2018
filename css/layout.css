@@ -125,6 +125,8 @@ a { text-decoration: none; color: white;}
     clear: both;
 }
 
+.p1-menu { margin-right: 29px; }
+
 .p1-img-logos { margin-top: 35px; }
 
 .p1-menu:hover a{ color: #c7b299; }
@@ -609,8 +611,6 @@ a { text-decoration: none; color: white;}
 .mgt-35 { margin-top: 35px; }
 .mgt-39 { margin-top: 39px; }
 .mgr-10 { margin-right: 10px; }
-.mgr-29 { margin-right: 29px; }
-.mgr-30 { margin-right: 30px; }
 .mgr-57 { margin-right: 57px; }
 .mgr-85 { margin-right: 85px; }
 
@@ -863,7 +863,7 @@ a { text-decoration: none; color: white;}
 
     .lh-28 { line-height: 24px; }
 
-    .mgr-29 { margin-right: 10px; }
+    .p1-menu { margin-right: 10px; }
 
     .f-RalewayRegular-34 { font-size: 29px; }
 }
@@ -889,7 +889,7 @@ a { text-decoration: none; color: white;}
 
     .lh-28 { line-height: 20px; }
 
-    .mgr-29 { margin-right: 5px; }
+    .p1-menu { margin-right: 5px; }
 
     .mgr-57 { margin-right: 20px; }
 
@@ -918,8 +918,6 @@ a { text-decoration: none; color: white;}
     .f-MontserratUltraLight-48 { font-size: 30px; }
 
     .lh-28 { line-height: 35px; }
-
-    .mgr-29 { margin-right: 10px; }
 
     .f-RalewayRegular-34 { font-size: 34px; }
 
