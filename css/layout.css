@@ -179,6 +179,7 @@ a { text-decoration: none; color: white;}
     height: 481px;
     position: absolute;
     bottom: 0;
+    margin-top: 39px;
 }
 
 .p2-img-center, .p2-img-right, .p2-img-left {
@@ -272,6 +273,12 @@ a { text-decoration: none; color: white;}
     border-color: #ebebeb;
     width: 120px;
 }
+#p3-all {
+    border-style: solid;
+    border-width: thin;
+    border-color: #ebebeb;
+    border-radius: 5px;
+}
 
 .p3-content {
     width: 65%;
@@ -346,15 +353,16 @@ a { text-decoration: none; color: white;}
     height: 31px;
 }
 
-.p3-link { background-image: url('../images/page3/page3-icon-link.png'); }
+.p3-link { background-image: url('../images/page3/page3-icon-link.png'); margin-right: 20px; }
 .p3-link:hover { background-image: url('../images/page3/page3-icon-link-overlay.png'); }
 .p3-search { background-image: url('../images/page3/page3-icon-search.png'); }
 .p3-search:hover { background-image: url('../images/page3/page3-icon-search-overlay.png'); }
 
-.p3-btn:hover {
+.p3-btn:hover, #p3-all:hover {
     border-color: #998675;
     color: #998675;
     transition: all 0.5s ease;
+    background-color: white;
 }
 /* ======================================Page 4============================== */
 .page4 { height: 710px; position: relative; }
@@ -601,7 +609,7 @@ a { text-decoration: none; color: white;}
 /* ============================Padding============================== */
 .pdl30 { padding-left: 30px }
 .pdr30 { padding-right: 30px }
-.pdt-5 { padding-top: 5px }
+.pdt-4 { padding-top: 4px }
 
 /* ============================Margin============================== */
 .mg-auto { margin: auto; }
@@ -849,13 +857,7 @@ a { text-decoration: none; color: white;}
 
 /* ================================Change size================================= */
 @media only screen and (max-width: 1750px) {
-    .f-MontserratLight-16 { font-size: 14px; }
-
-    .f-MontserratLight-14 { font-size: 10px; }
-
-    .f-MontserratLight-12 { font-size: 8px; }
-
-    .f-RalewaySemiBold-22 { font-size: 18px; }
+    /* .f-RalewaySemiBold-22 { font-size: 18px; } */
 
     .f-RalewayMedium-20 { font-size: 16px; }
 
@@ -866,6 +868,30 @@ a { text-decoration: none; color: white;}
     .p1-menu { margin-right: 10px; }
 
     .f-RalewayRegular-34 { font-size: 29px; }
+
+    .page1-menu, .page2-menu, .page2footercontent, .page3-header, .page3-content, .page4-content, .page5-frame, .page5-menu, .page6-content, .page7-logos, .page7-content, .page7-footer {
+        width: 80%;
+    }
+
+    .page2-menu { margin-bottom: 50px; }
+
+    .p2-img { margin-top: 0px;}
+
+    .page2content { height: 580px;}
+
+    .p2-submenu { height: 300px;}
+
+    .page4-content { left: 10%; }
+
+    .page7-logos { left: 10%;}
+}
+
+@media only screen and (max-width: 1500px) {
+    .page2content { height: 500px;}
+}
+
+@media only screen and (max-width: 1250px) {
+    .page2content { height: 450px;}
 }
 
 @media only screen and (max-width: 1150px) {
@@ -892,14 +918,6 @@ a { text-decoration: none; color: white;}
     .p1-menu { margin-right: 5px; }
 
     .mgr-57 { margin-right: 20px; }
-
-    .page1-menu, .page2-menu, .page2footercontent, .page3-header, .page3-content, .page4-content, .page5-frame, .page5-menu, .page6-content, .page7-logos, .page7-content, .page7-footer {
-        width: 80%;
-    }
-
-    .page4-content { left: 10%; }
-
-    .page7-logos { left: 10%;}
 }
 
 @media only screen and (max-width: 1000px) {
