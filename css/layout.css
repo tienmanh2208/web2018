@@ -33,9 +33,12 @@ a { text-decoration: none; color: white;}
     height: 50px;
     border-radius: 5px;
     background-color: #998675;
-    border-color: #998675;
+    border-width: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #736357;
 }
-.button:hover { background-color: #ffffff; color: #998675; transition: all 0.3s ease; }
+.button:hover { background-color: #ffffff; color: #998675; transition: all 0.3s ease; border-width: 1px 1px 3px 1px; border-color: #998675; }
 
 /* ============================Page 1============================ */
 
