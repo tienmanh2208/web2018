@@ -40,13 +40,22 @@ window.onload = function(ev){
     }
 
     document.getElementById('p1-header-option').onclick =  function () {
-        document.getElementById('p1-sidenav').style.width = '100%';
-        document.body.style.backgroundColor = "rgba(0,0,0,0.8)";
+        document.getElementById('p1-sidenav-overlay').style.width = '100%';
+        document.getElementById('p1-sidenav').style.width = '60%';
     }
 
     document.getElementById('p1-sidenav-close').onclick = function () {
+        document.getElementById('p1-sidenav-overlay').style.width = '0px';
         document.getElementById('p1-sidenav').style.width = '0px';
-        document.body.style.backgroundColor = "white";
+    }
+
+    document.getElementById('p1-sidenav-overlay').onclick = function () {
+        document.getElementById('p1-sidenav-overlay').style.width = '0px';
+        document.getElementById('p1-sidenav').style.width = '0px';
+    }
+
+    document.getElementById('p1-sidenav').onclick = function () {
+        console.log('clicked');
     }
 
     document.getElementById('p3-all').onclick = function () { changeStateTabPage3('p3-all', p3_tab_current); }
