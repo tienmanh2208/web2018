@@ -55,7 +55,6 @@ window.onload = function(ev){
     }
 
     document.getElementById('p1-sidenav').onclick = function () {
-        console.log('clicked');
     }
 
     document.getElementById('p3-all').onclick = function () { changeStateTabPage3('p3-all', p3_tab_current); }
