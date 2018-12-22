@@ -38,7 +38,7 @@ a { text-decoration: none; color: white;}
     border-bottom-width: 3px;
     border-bottom-color: #736357;
 }
-.button:hover { background-color: #ffffff; color: #998675; transition: all 0.3s ease; border-width: 1px 1px 3px 1px; border-color: #998675; }
+.button:hover { background-color: #ffffff; color: #998675; transition: all 0.3s ease; border-color: #998675; }
 
 /* ============================Page 1============================ */
 
@@ -143,13 +143,9 @@ a { text-decoration: none; color: white;}
 .p1-img-left { background-image: url('../images/page1/page1-left-dbl.png'); background-position: 0 0; }
 .p1-img-left:hover { background-position: 40px 0;}
 
-.p1-img-circle {
-    width: 11px;
-}
+.p1-img-circle { width: 11px; margin: 0 3px; }
 
-.p1-img-active {
-    width: 15px;
-}
+.p1-img-active { width: 15px; margin: 0 3px; }
 /* =================================Page 2================================ */
 .page2-menu { margin: auto; margin-bottom: 110px;}
 
@@ -229,10 +225,10 @@ a { text-decoration: none; color: white;}
 .p2-customization { background-image: url('../images/page2/page2-icon-customization-dbl.png'); margin: auto; background-position: 0px 0; }
 .p2-marketing { background-image: url('../images/page2/page2-icon-marketing-dbl.png'); margin: auto; background-position: 0px 0; }
 
-.p2-submenu:hover .p2-webappdesign { background-position: 52px 0; transition: ease-in-out 0.3s; }
-.p2-submenu:hover .p2-development { background-position: 52px 0; transition: ease-in-out 0.3s; }
-.p2-submenu:hover .p2-customization { background-position: 52px 0; transition: ease-in-out 0.3s; }
-.p2-submenu:hover .p2-marketing { background-position: 52px 0; transition: ease-in-out 0.3s; }
+.p2-submenu:hover .p2-webappdesign { background-position: 52px 0; }
+.p2-submenu:hover .p2-development { background-position: 52px 0; }
+.p2-submenu:hover .p2-customization { background-position: 52px 0; }
+.p2-submenu:hover .p2-marketing { background-position: 52px 0; }
 
 .p2-submenu:hover .p2-menutitle {
     color: #c7b299;
@@ -336,10 +332,12 @@ a { text-decoration: none; color: white;}
     transition: all 0.5s ease; 
 }
 
+.p3-item:hover .p3-square { background-color: #362f2d; transition: 0.5s; }
+
 .p3-photo1 { background: url('../images/page3/page3-photo1.png') center center; background-size: auto 100%; }
 .p3-photo2 { background: url('../images/page3/page3-photo2.png') center center; }
 .p3-photo3 { background: url('../images/page3/page3-photo3.png'); }
-.p3-photo4 { background: url('../images/page3/page3-photo4.png'); }
+.p3-photo4 { background: url('../images/page3/page3-photo4.png') left bottom; }
 .p3-photo5 { background: url('../images/page3/page3-photo5.png') center center; }
 .p3-photo6 { background: url('../images/page3/page3-photo6.png') center center; }
 
@@ -367,6 +365,17 @@ a { text-decoration: none; color: white;}
     color: #998675;
     transition: all 0.5s ease;
     background-color: white;
+}
+
+.p3-square {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    -webkit-clip-path: polygon(51% 16%, 100% 50%, 53% 80%, 0% 50%);
+    clip-path: polygon(51% 16%, 100% 50%, 53% 80%, 0% 50%);
 }
 /* ======================================Page 4============================== */
 .page4 { height: 710px; position: relative; }
@@ -896,6 +905,8 @@ a { text-decoration: none; color: white;}
 
 @media only screen and (max-width: 1500px) {
     .page2content { height: 500px;}
+    
+    .p2-content-content { padding-left: 15%; padding-right: 15%; }
 }
 
 @media only screen and (max-width: 1350px) {
