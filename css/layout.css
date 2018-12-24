@@ -945,6 +945,8 @@ a { text-decoration: none; color: white;}
 }
 
 @media only screen and (max-width: 1000px) {
+    .f-MontserratLight-24 { font-size: 35px; }
+
     .f-MontserratLight-16 { font-size: 30px; }
 
     .f-MontserratLight-14 { font-size: 30px; }
@@ -953,11 +955,13 @@ a { text-decoration: none; color: white;}
 
     .f-RalewaySemiBold-22 { font-size: 22px; }
 
-    .f-RalewaySemiBold-30 { font-size: 34px; }
+    .f-RalewaySemiBold-30 { font-size: 45px; }
 
     .f-RalewayMedium-20 { font-size: 35px; }
 
     .f-MontserratUltraLight-48 { font-size: 30px; }
+
+    .f-Roboto-12 { font-size: 25px; }
 
     .lh-24 { line-height: 50px; }
 
@@ -1012,7 +1016,7 @@ a { text-decoration: none; color: white;}
 
     .p2-content-content { padding: 0 0;}
 
-    .page5-frame { height: auto;}
+    .page5-frame { height: auto; width: 100%;}
 
     .page5-menu { width: 100%; }
 
@@ -1022,7 +1026,23 @@ a { text-decoration: none; color: white;}
 
     .p5-photo { height: 90%; width: auto; left: 30%;}
 
+    .p5-icon { width: 15%; }
+
+    .p5-footer-text { font-size: 20px; }
+
     .p6-text { width: 100%; }
+
+    .page6-content { width: 100%; }
+
+    .p6-items { height: 645px;}
+
+    .p6-photo1, .p6-photo2, .p6-photo3, .p6-photo4, .p6-photo5, .p6-photo6 { height: 370px; }
+
+    .p6-items-content { height: 275px; }
+
+    .p6-calendar { width: 100px; height: 120px; left: 30px; top: 30px;}
+    .p6-date { height: 70px;}
+    .p6-month { height: 50px;}
 
     .width48 { width: 100%; }
 
