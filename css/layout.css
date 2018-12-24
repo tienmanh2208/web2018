@@ -955,7 +955,7 @@ a { text-decoration: none; color: white;}
 
     .f-RalewaySemiBold-30 { font-size: 34px; }
 
-    .f-RalewayMedium-20 { font-size: 25px; }
+    .f-RalewayMedium-20 { font-size: 35px; }
 
     .f-MontserratUltraLight-48 { font-size: 30px; }
 
@@ -985,11 +985,30 @@ a { text-decoration: none; color: white;}
 
     .p2-menutitle { font-size: 42px; line-height: 60px; }
 
-    .page2content { min-height: 600px; height: auto;}
+    .page2content { min-height: 800px; height: auto;}
+
+    .p2-img-left, .p2-img-right { width: 50%; }
+    .p2-img-left { left: 5%; }
+    .p2-img-right { right: 5%; }
+    .p2-img-center { width: 60%; left: 20%; }
+
+    .p3-tab { display: none; }
 
     .p3-content { width: 100%; }
 
-    .page3-header { height: auto; padding-bottom: 50px;}
+    .page3-header { height: auto; padding-bottom: 50px; width: 100%;}
+
+    .page3-content { width: 100%; }
+
+    .p3-photo1, .p3-photo2, .p3-photo3, .p3-photo4, .p3-photo5, .p3-photo6 {
+        background-size: 100% auto;
+    }
+
+    .p3-photo { height: 338px;}
+
+    .p3-item { height: 488px;}
+
+    .p3-item-content { height: 150px;}
 
     .p2-content-content { padding: 0 0;}
 
@@ -1007,15 +1026,9 @@ a { text-decoration: none; color: white;}
 
     .width48 { width: 100%; }
 
-    .p3-photo1, .p3-photo2, .p3-photo3, .p3-photo4, .p3-photo5, .p3-photo6 {
-        background-size: 100% auto;
-    }
-
     .p6-photo1, .p6-photo2, .p6-photo3 {
         background-size: 100% auto;
     }
-
-    .p3-tab { display: none; }
 
     .p3-select { display: block; }
     /* .p3-item1, .p3-item2, .p3-item4, .p3 */
