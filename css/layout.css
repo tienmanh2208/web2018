@@ -945,9 +945,9 @@ a { text-decoration: none; color: white;}
 }
 
 @media only screen and (max-width: 1000px) {
-    .f-MontserratLight-16 { font-size: 22px; }
+    .f-MontserratLight-16 { font-size: 30px; }
 
-    .f-MontserratLight-14 { font-size: 20px; }
+    .f-MontserratLight-14 { font-size: 30px; }
 
     .f-MontserratLight-12 { font-size: 12px; }
 
@@ -959,13 +959,21 @@ a { text-decoration: none; color: white;}
 
     .f-MontserratUltraLight-48 { font-size: 30px; }
 
-    .lh-28 { line-height: 35px; }
+    .lh-24 { line-height: 50px; }
+
+    .lh-28 { line-height: 50px; }
+    
+    #p1-content { line-height: 50px; font-size: 40px; line-height: 50px; }
+
+    #p1-name { font-size: 90px; }
 
     .f-RalewayRegular-34 { font-size: 34px; }
 
     .flex-row-nowrap { flex-wrap: wrap; }
 
-    .slideleft, .slideright { width: 10%; }
+    .slideleft, .slideright { display: none; }
+
+    .page1content { width: 80%; padding-left: 10%; }
 
     .p3-item { width: 100%; }
 
@@ -973,7 +981,11 @@ a { text-decoration: none; color: white;}
 
     .p7-content-col { height: auto; width: 80%; padding-bottom: 30px; }
 
-    .p2-submenu { width: 40%; }
+    .p2-submenu { width: 100%; height: unset; line-height: 50px; padding: 50px 0px;}
+
+    .p2-menutitle { font-size: 42px; line-height: 60px; }
+
+    .page2content { min-height: 600px; height: auto;}
 
     .p3-content { width: 100%; }
 
