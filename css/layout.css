@@ -173,6 +173,7 @@ a { text-decoration: none; color: white; }
     flex-direction: column;
     justify-content: center;
     margin: 0 15px 0 15px;
+    transition: ease 0.3s;
 }
 
 .p2-img {
@@ -972,6 +973,8 @@ a { text-decoration: none; color: white; }
 
     .f-RalewayRegular-28 { font-size: 30px; }
 
+    .f-RalewayRegular-34 { font-size: 50px; }
+
     .f-MontserratUltraLight-48 { font-size: 30px; }
 
     .f-Roboto-12 { font-size: 25px; }
@@ -986,7 +989,11 @@ a { text-decoration: none; color: white; }
 
     #p1-name { font-size: 90px; }
 
-    .f-RalewayRegular-34 { font-size: 34px; }
+    .p1-menu-icon { width: 50px; height: 50px;}
+
+    .p1-header-option { font-size: 50px; }
+
+    .p1-img-logos { width: 80px; }
 
     .flex-row-nowrap { flex-wrap: wrap; }
 
@@ -1010,6 +1017,7 @@ a { text-decoration: none; color: white; }
         line-height: 50px; 
         padding: 50px 0px;
         display: inline-block;
+        margin: 0;
     }
 
     .p2-menu-flex {
@@ -1017,6 +1025,7 @@ a { text-decoration: none; color: white; }
         overflow: auto;
         white-space: nowrap;
         display: inline-block;
+        padding: 0 0;
     }
 
     .p2-menu-content { white-space: initial; }

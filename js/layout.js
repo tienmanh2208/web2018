@@ -1,45 +1,48 @@
 var p1_content = [
     1,
     {
-        title : 'Unique and Modern Design',
-        name : 'Portfolio PSD Template',
-        content : 'Nam liber tempor cum soluta nobis eleifend option congue nihil imper- diet doming id quod mazim placerat facer possim assum'
+        title: 'Unique and Modern Design',
+        name: 'Portfolio PSD Template',
+        content: 'Nam liber tempor cum soluta nobis eleifend option congue nihil imper- diet doming id quod mazim placerat facer possim assum'
     },
     {
-        title : 'Modern and Unique Design',
-        name : 'ABC PSD Template',
-        content : 'Nam liber tempor cum soluta imper- diet doming id quod mazim placerat facer possim assum'
+        title: 'Modern and Unique Design',
+        name: 'ABC PSD Template',
+        content: 'Nam liber tempor cum soluta imper- diet doming id quod mazim placerat facer possim assum'
     },
     {
-        title : 'Unique and Modern Design',
-        name : 'DEF PSD Template',
-        content : 'Nam eleifend option congue nihil imper- diet possim assum'
+        title: 'Unique and Modern Design',
+        name: 'DEF PSD Template',
+        content: 'Nam eleifend option congue nihil imper- diet possim assum'
     },
     {
-        title : 'Modern and Unique Design',
-        name : 'GHI PSD Template',
-        content : 'Nam liber tempor id quod mazim placerat facer possim assum'
+        title: 'Modern and Unique Design',
+        name: 'GHI PSD Template',
+        content: 'Nam liber tempor id quod mazim placerat facer possim assum'
     }
 ];
 
 var p3_tab_current = 'p3-all';
+var p2menu = {
+    current: 1,
+}
 
-window.onload = function(ev){
+window.onload = function (ev) {
     document.getElementById('p1-left').onclick = function () {
-        if(p1_content[0] === 1) {
+        if (p1_content[0] === 1) {
             p1_content[0] = 4;
             changeContentOfPage1(4, 1);
         } else { changeContentOfPage1(p1_content[0] - 1, p1_content[0]--); }
     }
 
     document.getElementById('p1-right').onclick = function () {
-        if(p1_content[0] === 4) {
+        if (p1_content[0] === 4) {
             p1_content[0] = 1;
             changeContentOfPage1(1, 4);
         } else { changeContentOfPage1(p1_content[0] + 1, p1_content[0]++); }
     }
 
-    document.getElementById('p1-header-option').onclick =  function () {
+    document.getElementById('p1-header-option').onclick = function () {
         document.getElementById('p1-sidenav-overlay').style.width = '100%';
         document.getElementById('p1-sidenav').style.width = '60%';
     }
@@ -62,6 +65,36 @@ window.onload = function(ev){
     document.getElementById('p3-mobileapp').onclick = function () { changeStateTabPage3('p3-mobileapp', p3_tab_current); }
     document.getElementById('p3-illustration').onclick = function () { changeStateTabPage3('p3-illustration', p3_tab_current); }
     document.getElementById('p3-photography').onclick = function () { changeStateTabPage3('p3-photography', p3_tab_current); }
+
+    document.getElementById('p2-submenu-1').ontouchend = function () {
+        var tmp = document.getElementById('p2-menu-flex').offsetWidth;
+        var tmp2 = document.getElementById('p2-menu-flex').scrollLeft;
+        if (tmp2 > tmp / 2) changeMenuPage2('next')
+        else changeMenuPage2('current');
+    }
+
+    document.getElementById('p2-submenu-2').ontouchend = function () {
+        var tmp = document.getElementById('p2-menu-flex').offsetWidth;
+        var tmp2 = document.getElementById('p2-menu-flex').scrollLeft;
+        if (tmp2 > (tmp + tmp / 2)) changeMenuPage2('next');
+        else if ((tmp / 2) < tmp2 && tmp2 < (tmp + tmp / 2)) changeMenuPage2('current');
+        else changeMenuPage2('pre');
+    }
+
+    document.getElementById('p2-submenu-3').ontouchend = function () {
+        var tmp = document.getElementById('p2-menu-flex').offsetWidth;
+        var tmp2 = document.getElementById('p2-menu-flex').scrollLeft;
+        if (tmp2 > (tmp * 2 + tmp / 2)) changeMenuPage2('next');
+        else if ((tmp + tmp / 2) < tmp2 && tmp2 < (tmp * 2 + tmp / 2)) changeMenuPage2('current');
+        else changeMenuPage2('pre');
+    }
+
+    document.getElementById('p2-submenu-4').ontouchend = function () {
+        var tmp = document.getElementById('p2-menu-flex').offsetWidth;
+        var tmp2 = document.getElementById('p2-menu-flex').scrollLeft;
+        if ((tmp * 2 + tmp / 2) < tmp2) changeMenuPage2('current');
+        else changeMenuPage2('pre');
+    }
 }
 
 /**
@@ -87,10 +120,36 @@ function changeContentOfPage1(index, before) {
  * @param {id} before 
  */
 function changeStateTabPage3(after, before) {
-    if( after === p3_tab_current ) return;
+    if (after === p3_tab_current) return;
     else {
         p3_tab_current = after;
         document.getElementById(after).classList.add('p3-btn-active');
         document.getElementById(before).classList.remove('p3-btn-active');
+    }
+}
+
+/**
+ * Change current tab of page 2 menu
+ * @param {string} direction next, pre or current
+ */
+function changeMenuPage2(direction) {
+    if (direction === 'next') {
+        if (p2menu.current === 4) {
+            document.getElementById('p2-menu-flex').scrollLeft = 0;
+            p2menu.current = 1;
+        } else {
+            document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * p2menu.current;
+            p2menu.current++;
+        }
+    } else if (direction === 'pre') {
+        if (p2menu.current === 1) {
+            document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * 3 + 50;
+            p2menu.current = 4;
+        } else {
+            document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * (p2menu.current - 2) + (p2menu.current - 1) * 4;
+            p2menu.current--;
+        }
+    } else if (direction === 'current') {
+        document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * (p2menu.current - 1) + (p2menu.current - 1) * 5;
     }
 }
