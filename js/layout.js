@@ -138,7 +138,7 @@ function changeMenuPage2(direction) {
             document.getElementById('p2-menu-flex').scrollLeft = 0;
             p2menu.current = 1;
         } else {
-            document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * p2menu.current;
+            document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * p2menu.current + (p2menu.current - 1) * 5;
             p2menu.current++;
         }
     } else if (direction === 'pre') {
@@ -146,7 +146,7 @@ function changeMenuPage2(direction) {
             document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * 3 + 50;
             p2menu.current = 4;
         } else {
-            document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * (p2menu.current - 2) + (p2menu.current - 1) * 4;
+            document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * (p2menu.current - 2) + (p2menu.current - 1) * 5;
             p2menu.current--;
         }
     } else if (direction === 'current') {
