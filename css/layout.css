@@ -255,6 +255,19 @@ a { text-decoration: none; color: white; }
     flex-wrap: nowrap;
     justify-content: center;
 }
+
+.p2-slider { margin: 15px 0; visibility: hidden; }
+
+.p2-slider-active { width: 20%; border-color: #918f8f; }
+.p2-slider-deactive { width: 5%; border-color: #bbbbbb; }
+
+.p2-slider-mobile {
+    margin: 0 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
 /* ===============================Page 3===================================== */
 
 .page3-header {
@@ -1044,6 +1057,8 @@ a { text-decoration: none; color: white; }
     .p2-img-left { left: 5%; }
     .p2-img-right { right: 5%; }
     .p2-img-center { width: 60%; left: 20%; }
+
+    .p2-slider { visibility: visible; }
 
     .p3-tab { display: none; }
 

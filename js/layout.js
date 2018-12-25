@@ -69,30 +69,30 @@ window.onload = function (ev) {
     document.getElementById('p2-submenu-1').ontouchend = function () {
         var tmp = document.getElementById('p2-menu-flex').offsetWidth;
         var tmp2 = document.getElementById('p2-menu-flex').scrollLeft;
-        if (tmp2 > tmp / 2) changeMenuPage2('next')
+        if (tmp2 > 100) changeMenuPage2('next')
         else changeMenuPage2('current');
     }
 
     document.getElementById('p2-submenu-2').ontouchend = function () {
         var tmp = document.getElementById('p2-menu-flex').offsetWidth;
         var tmp2 = document.getElementById('p2-menu-flex').scrollLeft;
-        if (tmp2 > (tmp + tmp / 2)) changeMenuPage2('next');
-        else if ((tmp / 2) < tmp2 && tmp2 < (tmp + tmp / 2)) changeMenuPage2('current');
+        if (tmp2 > (tmp + 100)) changeMenuPage2('next');
+        else if ((tmp - 100) < tmp2 && tmp2 < (tmp + 100)) changeMenuPage2('current');
         else changeMenuPage2('pre');
     }
 
     document.getElementById('p2-submenu-3').ontouchend = function () {
         var tmp = document.getElementById('p2-menu-flex').offsetWidth;
         var tmp2 = document.getElementById('p2-menu-flex').scrollLeft;
-        if (tmp2 > (tmp * 2 + tmp / 2)) changeMenuPage2('next');
-        else if ((tmp + tmp / 2) < tmp2 && tmp2 < (tmp * 2 + tmp / 2)) changeMenuPage2('current');
+        if (tmp2 > (tmp * 2 + 100)) changeMenuPage2('next');
+        else if ((tmp * 2 - 100) < tmp2 && tmp2 < (tmp * 2 + 100)) changeMenuPage2('current');
         else changeMenuPage2('pre');
     }
 
     document.getElementById('p2-submenu-4').ontouchend = function () {
         var tmp = document.getElementById('p2-menu-flex').offsetWidth;
         var tmp2 = document.getElementById('p2-menu-flex').scrollLeft;
-        if ((tmp * 2 + tmp / 2) < tmp2) changeMenuPage2('current');
+        if ((tmp * 3 - 100) < tmp2) changeMenuPage2('current');
         else changeMenuPage2('pre');
     }
 }
@@ -135,17 +135,34 @@ function changeStateTabPage3(after, before) {
 function changeMenuPage2(direction) {
     if (direction === 'next') {
         if (p2menu.current === 4) {
+            document.getElementById('p2-slider-4').classList.remove('p2-slider-active');
+            document.getElementById('p2-slider-4').classList.add('p2-slider-deactive');
+            document.getElementById('p2-slider-1').classList.remove('p2-slider-deactive');
+            document.getElementById('p2-slider-1').classList.add('p2-slider-active');
             document.getElementById('p2-menu-flex').scrollLeft = 0;
             p2menu.current = 1;
+            console.log(p2menu.current);
         } else {
+            document.getElementById('p2-slider-' + p2menu.current).classList.remove('p2-slider-active');
+            document.getElementById('p2-slider-' + p2menu.current).classList.add('p2-slider-deactive');
+            document.getElementById('p2-slider-' + (p2menu.current + 1)).classList.remove('p2-slider-deactive');
+            document.getElementById('p2-slider-' + (p2menu.current + 1)).classList.add('p2-slider-active');
             document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * p2menu.current + (p2menu.current - 1) * 5;
             p2menu.current++;
         }
     } else if (direction === 'pre') {
         if (p2menu.current === 1) {
+            document.getElementById('p2-slider-1').classList.remove('p2-slider-active');
+            document.getElementById('p2-slider-1').classList.add('p2-slider-deactive');
+            document.getElementById('p2-slider-4').classList.remove('p2-slider-deactive');
+            document.getElementById('p2-slider-4').classList.add('p2-slider-active');
             document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * 3 + 50;
             p2menu.current = 4;
         } else {
+            document.getElementById('p2-slider-' + p2menu.current).classList.remove('p2-slider-active');
+            document.getElementById('p2-slider-' + p2menu.current).classList.add('p2-slider-deactive');
+            document.getElementById('p2-slider-' + (p2menu.current - 1)).classList.remove('p2-slider-deactive');
+            document.getElementById('p2-slider-' + (p2menu.current - 1)).classList.add('p2-slider-active');
             document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * (p2menu.current - 2) + (p2menu.current - 1) * 5;
             p2menu.current--;
         }
