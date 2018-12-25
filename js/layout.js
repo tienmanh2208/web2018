@@ -196,34 +196,34 @@ function changeMenuPage2(direction) {
 function changeItemPage3(direction) {
     if (direction === 'next') {
         if (p3item.current === 6) {
-            document.getElementById('p3-item-6').classList.remove('p3-item-active');
-            document.getElementById('p3-item-6').classList.add('p3-item-deactive');
-            document.getElementById('p3-item-1').classList.remove('p3-item-deactive');
-            document.getElementById('p3-item-1').classList.add('p3-item-active');
+            // document.getElementById('p3-item-6').classList.remove('p3-item-active');
+            // document.getElementById('p3-item-6').classList.add('p3-item-deactive');
+            // document.getElementById('p3-item-1').classList.remove('p3-item-deactive');
+            // document.getElementById('p3-item-1').classList.add('p3-item-active');
             document.getElementById('p3-slider').scrollLeft = 0;
             p3item.current = 1;
             console.log(p3item.current);
         } else {
-            document.getElementById('p3-item-' + p3item.current).classList.remove('p3-item-active');
-            document.getElementById('p3-item-' + p3item.current).classList.add('p3-item-deactive');
-            document.getElementById('p3-item-' + (p3item.current + 1)).classList.remove('p3-item-deactive');
-            document.getElementById('p3-item-' + (p3item.current + 1)).classList.add('p3-item-active');
+            // document.getElementById('p3-item-' + p3item.current).classList.remove('p3-item-active');
+            // document.getElementById('p3-item-' + p3item.current).classList.add('p3-item-deactive');
+            // document.getElementById('p3-item-' + (p3item.current + 1)).classList.remove('p3-item-deactive');
+            // document.getElementById('p3-item-' + (p3item.current + 1)).classList.add('p3-item-active');
             document.getElementById('p3-slider').scrollLeft = document.getElementById('p3-slider').offsetWidth * p3item.current * 8 / 10;
             p3item.current++;
         }
     } else if (direction === 'pre') {
         if (p3item.current === 1) {
-            document.getElementById('p3-item-1').classList.remove('p3-item-active');
-            document.getElementById('p3-item-1').classList.add('p3-item-deactive');
-            document.getElementById('p3-item-6').classList.remove('p3-item-deactive');
-            document.getElementById('p3-item-6').classList.add('p3-item-active');
+            // document.getElementById('p3-item-1').classList.remove('p3-item-active');
+            // document.getElementById('p3-item-1').classList.add('p3-item-deactive');
+            // document.getElementById('p3-item-6').classList.remove('p3-item-deactive');
+            // document.getElementById('p3-item-6').classList.add('p3-item-active');
             document.getElementById('p3-slider').scrollLeft = document.getElementById('p3-slider').offsetWidth * 5 * 8 / 10;
             p3item.current = 6;
         } else {
-            document.getElementById('p3-item-' + p3item.current).classList.remove('p3-item-active');
-            document.getElementById('p3-item-' + p3item.current).classList.add('p3-item-deactive');
-            document.getElementById('p3-item-' + (p3item.current - 1)).classList.remove('p3-item-deactive');
-            document.getElementById('p3-item-' + (p3item.current - 1)).classList.add('p3-item-active');
+            // document.getElementById('p3-item-' + p3item.current).classList.remove('p3-item-active');
+            // document.getElementById('p3-item-' + p3item.current).classList.add('p3-item-deactive');
+            // document.getElementById('p3-item-' + (p3item.current - 1)).classList.remove('p3-item-deactive');
+            // document.getElementById('p3-item-' + (p3item.current - 1)).classList.add('p3-item-active');
             document.getElementById('p3-slider').scrollLeft = document.getElementById('p3-slider').offsetWidth * (p3item.current - 2) * 8 / 10 + (p3item.current - 1) * 5;
             p3item.current--;
         }
