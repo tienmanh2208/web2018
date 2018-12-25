@@ -378,12 +378,12 @@ a { text-decoration: none; color: white; }
 
 .p3-item:hover .p3-square { background-color: #362f2d; transition: 0.5s; }
 
-.p3-photo1 { background: url('../images/page3/page3-photo1.png') center center; background-size: auto 100%; }
-.p3-photo2 { background: url('../images/page3/page3-photo2.png') center center; }
-.p3-photo3 { background: url('../images/page3/page3-photo3.png'); }
-.p3-photo4 { background: url('../images/page3/page3-photo4.png') left bottom; }
-.p3-photo5 { background: url('../images/page3/page3-photo5.png') center center; }
-.p3-photo6 { background: url('../images/page3/page3-photo6.png') center center; }
+.p3-photo1 { background: url('../images/page3/page3-photo1.jpg') center center; background-size: auto 100%; }
+.p3-photo2 { background: url('../images/page3/page3-photo2.jpg') center center; }
+.p3-photo3 { background: url('../images/page3/page3-photo3.jpg'); }
+.p3-photo4 { background: url('../images/page3/page3-photo4.jpg') left bottom; }
+.p3-photo5 { background: url('../images/page3/page3-photo5.jpg') center center; }
+.p3-photo6 { background: url('../images/page3/page3-photo6.jpg') center center; }
 
 .p3-overlay{
     display: none;
