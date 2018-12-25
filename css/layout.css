@@ -1062,6 +1062,10 @@ a { text-decoration: none; color: white; }
 
     .p2-slider { visibility: visible; }
 
+    .page2-menu { width: 100%; }
+
+    .p3-select { height: 70px;}
+
     .p3-tab { display: none; }
 
     .p3-content { width: 100%; }
@@ -1079,6 +1083,8 @@ a { text-decoration: none; color: white; }
     .p3-item { height: 588px;}
 
     .p3-item-content { height: 150px;}
+
+    .p3-overlay { height: 438px; }
 
     .p2-content-content { padding: 0 0;}
 
