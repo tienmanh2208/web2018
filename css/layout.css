@@ -48,7 +48,7 @@ a { text-decoration: none; color: white; }
 .p1-blur {
     width: 100%;
     height: 1026px;
-    background-image: url('../images/page1/page1-background.png');
+    background-image: url('../images/page1/page1-background.jpg');
     background-position: 40% 0%;
     filter: brightness(40%);
 }
@@ -427,7 +427,7 @@ a { text-decoration: none; color: white; }
 .p4-blur {
     width: 100%;
     height: 710px;
-    background: url('../images/page4/page4-background.png') center;
+    background: url('../images/page4/page4-background.jpg') center;
     filter: brightness(60%);
 }
 
@@ -607,7 +607,7 @@ a { text-decoration: none; color: white; }
 .p7-blur {
     width: 100%;
     height: 492px;
-    background: #fff url('../images/page7/page7-header-background.png') 80% center;
+    background: #fff url('../images/page7/page7-header-background.jpg') 80% center;
     filter: brightness(40%);
 }
 
@@ -1123,7 +1123,7 @@ a { text-decoration: none; color: white; }
         overflow: auto;
         white-space: nowrap;
         /* display: inline-block; */
-        padding: 50px 0;
+        padding: 100px 0;
         height: 688px; 
     }
 
