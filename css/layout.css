@@ -89,10 +89,11 @@ a { text-decoration: none; color: white; }
     background-color: #000000;
     width: 0px;
     height: 100%;
-    font-size: 40px;
     line-height: 90px;
     transition: 0.5s;
     z-index: 1;
+    font-family: Montserrat-Light;
+    font-size: 40px;
 }
 
 #p1-sidenav-close {
