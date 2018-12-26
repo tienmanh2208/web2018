@@ -98,21 +98,21 @@ window.onload = function (ev) {
         else changeMenuPage2('pre');
     }
 
-    document.getElementById('p3-item-1').ontouchend = function () {
-        var tmp = document.getElementById('p3-slider').offsetWidth;
-        var tmp2 = document.getElementById('p3-slider').scrollLeft;
-        if (tmp2 > 100) changeItemPage3('next');
-        else changeItemPage3('current');
-    }
+    // document.getElementById('p3-item-1').ontouchend = function () {
+    //     var tmp = document.getElementById('p3-slider').offsetWidth;
+    //     var tmp2 = document.getElementById('p3-slider').scrollLeft;
+    //     if (tmp2 > 100) changeItemPage3('next');
+    //     else changeItemPage3('current');
+    // }
 
-    for (var i = 2; i <= 5; ++i) { setActionForPage3Item(i); }
+    // for (var i = 2; i <= 5; ++i) { setActionForPage3Item(i); }
 
-    document.getElementById('p3-item-6').ontouchend = function () {
-        var tmp = document.getElementById('p3-slider').offsetWidth;
-        var tmp2 = document.getElementById('p3-slider').scrollLeft;
-        if ((tmp * 5 * 8 / 10 - 100) < tmp2) changeItemPage3('current');
-        else changeItemPage3('pre');
-    }
+    // document.getElementById('p3-item-6').ontouchend = function () {
+    //     var tmp = document.getElementById('p3-slider').offsetWidth;
+    //     var tmp2 = document.getElementById('p3-slider').scrollLeft;
+    //     if ((tmp * 5 * 8 / 10 - 100) < tmp2) changeItemPage3('current');
+    //     else changeItemPage3('pre');
+    // }
 }
 
 /**
