@@ -663,6 +663,9 @@ a { text-decoration: none; color: white; }
     color: white;
     margin-top: 103px;
 }
+
+.page7-footer-left { float: left; }
+.page7-footer-right { float: right; }
 /* ============================Width============================== */
 .width48 { width: 48% }
 
@@ -1004,6 +1007,8 @@ a { text-decoration: none; color: white; }
 
     .f-MontserratLight-14 { font-size: 35px; }
 
+    .f-MontserratLight-13 { font-size: 30px; }
+
     .f-MontserratLight-12 { font-size: 12px; }
 
     .f-RalewaySemiBold-22 { font-size: 22px; }
@@ -1177,6 +1182,24 @@ a { text-decoration: none; color: white; }
     }
 
     .page7-content { width: 100%; }
+
+    .page7-footer { 
+        width: 100%; 
+        height: unset;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page7-footer-left {
+        float: none;
+    }
+    .page7-footer-right {
+        float: none;
+    }
+
+    .page7bottom { height: unset;}
 
     .p3-select { display: block; }
     /* .p3-item1, .p3-item2, .p3-item4, .p3 */
