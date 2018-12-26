@@ -125,7 +125,7 @@ function changeContentOfPage1(index, before) {
     document.getElementById('p1-title').innerHTML = p1_content[index].title;
     document.getElementById('p1-name').innerHTML = p1_content[index].name;
     document.getElementById('p1-content').innerHTML = p1_content[index].content;
-    document.getElementById('p1-blur').style.backgroundImage = 'url(' + p1_content[index].img + ')';
+    // document.getElementById('p1-blur').style.backgroundImage = 'url(' + p1_content[index].img + ')';
     document.getElementById('p1-slide' + before).classList.remove('p1-img-active');
     document.getElementById('p1-slide' + before).classList.add('p1-img-circle');
     document.getElementById('p1-slide' + before).setAttribute('src', './images/page1/page1-circle.png');
