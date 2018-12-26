@@ -51,6 +51,7 @@ a { text-decoration: none; color: white; }
     background-image: url('../images/page1/page1-background.jpg');
     background-position: 40% 0%;
     filter: brightness(40%);
+    transition: 0.5s ease-in;
 }
 
 .p1-img-background {

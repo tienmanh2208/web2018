@@ -3,22 +3,26 @@ var p1_content = [
     {
         title: 'Unique and Modern Design',
         name: 'Portfolio PSD Template',
-        content: 'Nam liber tempor cum soluta nobis eleifend option congue nihil imper- diet doming id quod mazim placerat facer possim assum'
+        content: 'Nam liber tempor cum soluta nobis eleifend option congue nihil imper- diet doming id quod mazim placerat facer possim assum',
+        img: '../web2018/images/page1/page1-background.jpg'
     },
     {
         title: 'Modern and Unique Design',
         name: 'ABC PSD Template',
-        content: 'Nam liber tempor cum soluta imper- diet doming id quod mazim placerat facer possim assum'
+        content: 'Nam liber tempor cum soluta imper- diet doming id quod mazim placerat facer possim assum',
+        img: '../web2018/images/page1/page1-background-2.jpg'
     },
     {
         title: 'Unique and Modern Design',
         name: 'DEF PSD Template',
-        content: 'Nam eleifend option congue nihil imper- diet possim assum'
+        content: 'Nam eleifend option congue nihil imper- diet possim assum',
+        img: '../web2018/images/page1/page1-background-3.jpg'
     },
     {
         title: 'Modern and Unique Design',
         name: 'GHI PSD Template',
-        content: 'Nam liber tempor id quod mazim placerat facer possim assum'
+        content: 'Nam liber tempor id quod mazim placerat facer possim assum',
+        img: '../web2018/images/page1/page1-background-4.jpg'
     }
 ];
 
@@ -28,20 +32,20 @@ var p2menu = {
 };
 
 var p3item = { current: 1 };
+var touch = {
+    start_x: 0,
+    start_y: 0,
+    end_x: 0,
+    end_y: 0
+}
 
 window.onload = function (ev) {
     document.getElementById('p1-left').onclick = function () {
-        if (p1_content[0] === 1) {
-            p1_content[0] = 4;
-            changeContentOfPage1(4, 1);
-        } else { changeContentOfPage1(p1_content[0] - 1, p1_content[0]--); }
+        changeContentPage1('pre');
     }
 
     document.getElementById('p1-right').onclick = function () {
-        if (p1_content[0] === 4) {
-            p1_content[0] = 1;
-            changeContentOfPage1(1, 4);
-        } else { changeContentOfPage1(p1_content[0] + 1, p1_content[0]++); }
+        changeContentPage1('next');
     }
 
     document.getElementById('p1-header-option').onclick = function () {
@@ -98,32 +102,30 @@ window.onload = function (ev) {
         else changeMenuPage2('pre');
     }
 
-    // document.getElementById('p3-item-1').ontouchend = function () {
-    //     var tmp = document.getElementById('p3-slider').offsetWidth;
-    //     var tmp2 = document.getElementById('p3-slider').scrollLeft;
-    //     if (tmp2 > 100) changeItemPage3('next');
-    //     else changeItemPage3('current');
-    // }
+    document.getElementById('page1content').ontouchstart = function () {
+        touch.start_x = event.touches[0].clientX;
+    }
 
-    // for (var i = 2; i <= 5; ++i) { setActionForPage3Item(i); }
+    document.getElementById('page1content').ontouchmove = function () {
+        touch.end_x = event.touches[0].clientX;
+    }
 
-    // document.getElementById('p3-item-6').ontouchend = function () {
-    //     var tmp = document.getElementById('p3-slider').offsetWidth;
-    //     var tmp2 = document.getElementById('p3-slider').scrollLeft;
-    //     if ((tmp * 5 * 8 / 10 - 100) < tmp2) changeItemPage3('current');
-    //     else changeItemPage3('pre');
-    // }
+    document.getElementById('page1content').ontouchend = function () {
+        if ((touch.end_x - touch.start_x) > 100) { changeContentPage1('next'); }
+        else if ((touch.end_x - touch.start_x) < -100) { changeContentPage1('pre'); }
+    }
 }
 
 /**
  * This function will change icon slide of page 1
- * @param {number} index 
+ * @param {number} index
  * @param {number} before
  */
 function changeContentOfPage1(index, before) {
     document.getElementById('p1-title').innerHTML = p1_content[index].title;
     document.getElementById('p1-name').innerHTML = p1_content[index].name;
     document.getElementById('p1-content').innerHTML = p1_content[index].content;
+    document.getElementById('p1-blur').style.backgroundImage = 'url(' + p1_content[index].img + ')';
     document.getElementById('p1-slide' + before).classList.remove('p1-img-active');
     document.getElementById('p1-slide' + before).classList.add('p1-img-circle');
     document.getElementById('p1-slide' + before).setAttribute('src', './images/page1/page1-circle.png');
@@ -186,6 +188,24 @@ function changeMenuPage2(direction) {
         }
     } else if (direction === 'current') {
         document.getElementById('p2-menu-flex').scrollLeft = document.getElementById('p2-menu-flex').offsetWidth * (p2menu.current - 1) + (p2menu.current - 1) * 5;
+    }
+}
+
+/**
+ * change content of page 1
+ * @param {*} direction 'next' or 'pre'
+ */
+function changeContentPage1(direction) {
+    if (direction === 'next') {
+        if (p1_content[0] === (p1_content.length - 1)) {
+            p1_content[0] = 1;
+            changeContentOfPage1(1, p1_content.length - 1);
+        } else { changeContentOfPage1(p1_content[0] + 1, p1_content[0]++) }
+    } else if (direction === 'pre') {
+        if (p1_content[0] === 1) {
+            p1_content[0] = p1_content.length - 1;
+            changeContentOfPage1(p1_content.length - 1, 1);
+        } else { changeContentOfPage1(p1_content[0] - 1, p1_content[0]--) }
     }
 }
 
