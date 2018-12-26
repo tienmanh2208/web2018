@@ -516,6 +516,13 @@ a { text-decoration: none; color: white; }
     margin-top: 12px;
     color: white;
 }
+
+.p5-flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
 /* =======================================Page 6================================== */
 
 .page6-content {
@@ -1133,7 +1140,9 @@ a { text-decoration: none; color: white; }
 
     .page5-frame { height: auto; width: 100%;}
 
-    .page5-menu { width: 100%; }
+    .page5footer { height: unset; }
+
+    .page5-menu { width: 100%; height: unset;}
 
     .page5photo, .page5content { position: relative; width: 100%;}
 
@@ -1141,7 +1150,9 @@ a { text-decoration: none; color: white; }
 
     .p5-photo { height: 90%; width: auto; left: 30%;}
 
-    .p5-icon { width: 15%; }
+    .p5-icon { width: 25%; margin: 25px; }
+
+    .p5-flex-row { flex-wrap: wrap; padding: 10px; }
 
     .p5-footer-text { font-size: 20px; }
 
