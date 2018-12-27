@@ -132,6 +132,10 @@ a { text-decoration: none; color: white; }
     clear: both;
 }
 
+.p1-name {
+    transition: 0.5s;
+}
+
 .p1-menu { margin-right: 29px; }
 
 .p1-img-logos { margin-top: 35px; }
@@ -1027,7 +1031,7 @@ a { text-decoration: none; color: white; }
 
     .f-RalewayRegular-34 { font-size: 50px; }
 
-    .f-MontserratUltraLight-48 { font-size: 30px; }
+    .f-MontserratUltraLight-48 { font-size: 48px; }
 
     .f-MontserratRegular-14 { font-size: 25px; }
 
@@ -1157,11 +1161,11 @@ a { text-decoration: none; color: white; }
 
     .p5-photo { height: 90%; width: auto; left: 30%;}
 
-    .p5-icon { width: 25%; margin: 25px; }
+    .p5-icon { width: 27%; margin: 25px; }
 
     .p5-flex-row { flex-wrap: wrap; padding: 10px; }
 
-    .p5-footer-text { font-size: 20px; }
+    .p5-footer-text { font-size: 25px; }
 
     .p6-text { width: 100%; }
 
