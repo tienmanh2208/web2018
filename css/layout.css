@@ -125,6 +125,12 @@ a { text-decoration: none; color: white; }
     -o-transition: opacity .5s ease-out;
 }
 
+#p1-title, #p1-name, #p1-content {
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
 .slideleft, .slideright { width: 19%; height: 754px;}
 .slideleft { float: left; }
 .slideright { float: right; }
