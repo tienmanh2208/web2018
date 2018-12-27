@@ -196,7 +196,7 @@ function changeMenuPage2(direction) {
  * @param {*} direction 'next' or 'pre'
  */
 function changeContentPage1(direction) {
-    $('#p1-title, #p1-name, #p1-content').fadeTo('0.3', 0, function () {
+    $('#p1-title, #p1-name, #p1-content').fadeTo('0.2', 0, function () {
         if (direction === 'next') {
             if (p1_content[0] === (p1_content.length - 1)) {
                 p1_content[0] = 1;
@@ -209,7 +209,7 @@ function changeContentPage1(direction) {
             } else { changeContentOfPage1(p1_content[0] - 1, p1_content[0]--) }
         }
 
-        $('#p1-title, #p1-name, #p1-content').fadeTo('0.3', 1);
+        $('#p1-title, #p1-name, #p1-content').fadeTo('0.2', 1);
     })
 }
 
