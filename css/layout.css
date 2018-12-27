@@ -1125,6 +1125,7 @@ a { text-decoration: none; color: white; }
         width: 100%;
     }
     .page2footer { height: unset; }
+    .buttonpurchase { width: 300px; }
 
     .p3-select { height: 70px;}
 
