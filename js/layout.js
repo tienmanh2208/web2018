@@ -196,17 +196,21 @@ function changeMenuPage2(direction) {
  * @param {*} direction 'next' or 'pre'
  */
 function changeContentPage1(direction) {
-    if (direction === 'next') {
-        if (p1_content[0] === (p1_content.length - 1)) {
-            p1_content[0] = 1;
-            changeContentOfPage1(1, p1_content.length - 1);
-        } else { changeContentOfPage1(p1_content[0] + 1, p1_content[0]++) }
-    } else if (direction === 'pre') {
-        if (p1_content[0] === 1) {
-            p1_content[0] = p1_content.length - 1;
-            changeContentOfPage1(p1_content.length - 1, 1);
-        } else { changeContentOfPage1(p1_content[0] - 1, p1_content[0]--) }
-    }
+    $('#page1content').fadeTo('0.3', 0, function () {
+        if (direction === 'next') {
+            if (p1_content[0] === (p1_content.length - 1)) {
+                p1_content[0] = 1;
+                changeContentOfPage1(1, p1_content.length - 1);
+            } else { changeContentOfPage1(p1_content[0] + 1, p1_content[0]++) }
+        } else if (direction === 'pre') {
+            if (p1_content[0] === 1) {
+                p1_content[0] = p1_content.length - 1;
+                changeContentOfPage1(p1_content.length - 1, 1);
+            } else { changeContentOfPage1(p1_content[0] - 1, p1_content[0]--) }
+        }
+
+        $('#page1content').fadeTo('0.3', 1);
+    })
 }
 
 /**
