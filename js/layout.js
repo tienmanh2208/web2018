@@ -41,10 +41,12 @@ var touch = {
 
 window.onload = function (ev) {
     document.getElementById('p1-left').onclick = function () {
+        console.log('click');
         changeContentPage1('pre');
     }
 
     document.getElementById('p1-right').onclick = function () {
+        console.log('click')
         changeContentPage1('next');
     }
 
@@ -122,6 +124,7 @@ window.onload = function (ev) {
  * @param {number} before
  */
 function changeContentOfPage1(index, before) {
+    console.log(index + '    ' + before);
     document.getElementById('p1-title').innerHTML = p1_content[index].title;
     document.getElementById('p1-name').innerHTML = p1_content[index].name;
     document.getElementById('p1-content').innerHTML = p1_content[index].content;

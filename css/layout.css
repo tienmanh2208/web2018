@@ -663,7 +663,7 @@ a { text-decoration: none; color: white; }
 .p7-logo {
     width: 18.5%;
     max-width: 225px;
-    height: 18.5%;
+    object-fit: contain;
 }
 
 ._7 {
