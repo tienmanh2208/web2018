@@ -1,3 +1,45 @@
+body { margin: 0px; font-size: 24pt; cursor: default; z-index: 100;}
+
+        .frame { transition: background-color 1s; }
+
+        .borderinset {
+            border-style: inset;
+            border-width: thin;
+            border-color: black;
+        }
+
+        .frame {
+            /* max-width: 1920px; */
+            width: 100%;
+            /* margin: auto; */
+            position: relative;
+        }
+
+        .page1, .page2, .page3, .page4, .page5, .page6, .page7 { width: 100%; position: relative;}
+
+        .page1-menu, .page2-menu, .page2footercontent, .page3-header, .page3-content, .page4-content, .page5-frame, .page5-menu, .page6-content, .page7-logos, .page7-content, .page7-footer {
+            width: 61.2%;
+        }
+
+        ul li { display: inline; }
+
+        a { text-decoration: none; color: white; }
+
+        .cursor-pointer { cursor: pointer; }
+        .cursor-default { cursor: default; }
+
+        .button {
+            width: 170px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #998675;
+            border-width: 1px;
+            border-color: #998675;
+            border-bottom-style: solid;
+            border-bottom-width: 3px;
+            border-bottom-color: #736357;
+        }
+        .button:hover { background-color: #ffffff; color: #998675; transition: all 0.3s ease; border-color: #998675; }
 /* ============================Page 1============================ */
 
 .page1 { position: relative; }
