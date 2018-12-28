@@ -1060,26 +1060,31 @@ a {
 
 @font-face {
     font-family: Montserrat-UltraLight;
+    font-display: auto;
     src: url('../fonts/Montserrat-UltraLight.woff');
 }
 
 @font-face {
     font-family: Raleway-Bold;
+    font-display: auto;
     src: url('../fonts/Raleway-Bold.woff');
 }
 
 @font-face {
     font-family: Raleway-Regular;
+    font-display: auto;
     src: url('../fonts/Raleway-Regular.woff');
 }
 
 @font-face {
     font-family: Raleway-SemiBold;
+    font-display: auto;
     src: url('../fonts/Raleway-SemiBold.woff');
 }
 
 @font-face {
     font-family: Roboto;
+    font-display: auto;
     src: url('../fonts/Roboto-Regular.woff');
 }
 
@@ -1145,6 +1150,7 @@ a {
 
 @font-face {
     font-family: Montserrat-Regular;
+    font-display: auto;
     src: url('../fonts/Montserrat-Regular.woff');
 }
 
@@ -1155,6 +1161,7 @@ a {
 
 @font-face {
     font-family: Montserrat-Light;
+    font-display: auto;
     src: url('../fonts/Montserrat-Light.woff');
 }
 
@@ -1166,6 +1173,7 @@ a {
 
 @font-face {
     font-family: Raleway-Medium;
+    font-display: auto;
     src: url('../fonts/Raleway-Medium.woff');
 }
 
@@ -1176,6 +1184,7 @@ a {
 
 @font-face {
     font-family: Raleway-ExtraBold;
+    font-display: auto;
     src: url('../fonts/Raleway-ExtraBold.woff');
 }
 
