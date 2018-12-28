@@ -199,7 +199,7 @@ function changeMenuPage2(direction) {
  * @param {*} direction 'next' or 'pre'
  */
 function changeContentPage1(direction) {
-    $('#p1-content-text').fadeTo('0.2', 0, function () {
+    $('#p1-content-text').fadeTo('0.1', 0, function () {
         if (direction === 'next') {
             if (p1_content[0] === (p1_content.length - 1)) {
                 p1_content[0] = 1;

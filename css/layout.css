@@ -120,15 +120,12 @@ a { text-decoration: none; color: white; }
 .page1content {
     width: 100%;
     height: 754px;
-    -moz-transition: opacity .5s ease-out;
-    -webkit-transition: opacity .5s ease-out;
-    -o-transition: opacity .5s ease-out;
 }
 
 #p1-content-text {
-    -moz-transition: opacity .2s ease-out;
-    -webkit-transition: opacity .2s ease-out;
-    -o-transition: opacity .2s ease-out;
+    -moz-transition: opacity 1 ease-out;
+    -webkit-transition: opacity 1 ease-out;
+    -o-transition: opacity 1 ease-out;
 }
 
 .slideleft, .slideright { width: 19%; height: 754px;}
