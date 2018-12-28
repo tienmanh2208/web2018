@@ -722,47 +722,47 @@
 /* ============================Fonts============================== */
 @font-face {
     font-family: Montserrat-Light;
-    src: url('../fonts/Montserrat-Light.otf');
+    src: url('../fonts/Montserrat-Light.woff');
 }
 
 @font-face {
     font-family: Montserrat-Regular;
-    src: url('../fonts/Montserrat-Regular.otf');
+    src: url('../fonts/Montserrat-Regular.woff');
 }
 
 @font-face {
     font-family: Montserrat-UltraLight;
-    src: url('../fonts/Montserrat-UltraLight.otf');
+    src: url('../fonts/Montserrat-UltraLight.woff');
 }
 
 @font-face {
     font-family: Raleway-Bold;
-    src: url('../fonts/Raleway-Bold.otf');
+    src: url('../fonts/Raleway-Bold.woff');
 }
 
 @font-face {
     font-family: Raleway-ExtraBold;
-    src: url('../fonts/Raleway-ExtraBold.otf');
+    src: url('../fonts/Raleway-ExtraBold.woff');
 }
 
 @font-face {
     font-family: Raleway-Medium;
-    src: url('../fonts/Raleway-Medium.otf');
+    src: url('../fonts/Raleway-Medium.woff');
 }
 
 @font-face {
     font-family: Raleway-Regular;
-    src: url('../fonts/Raleway-Regular.otf');
+    src: url('../fonts/Raleway-Regular.woff');
 }
 
 @font-face {
     font-family: Raleway-SemiBold;
-    src: url('../fonts/Raleway-SemiBold.otf');
+    src: url('../fonts/Raleway-SemiBold.woff');
 }
 
 @font-face {
     font-family: Roboto;
-    src: url('../fonts/Roboto-Regular.otf');
+    src: url('../fonts/Roboto-Regular.woff');
 }
 
 .f-RalewayRegular-28 {
