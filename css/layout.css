@@ -979,11 +979,11 @@ a {
 }
 
 /* ============================Text align============================== */
-
+/* 
 .ta-center-136 {
     justify-items: center;
     line-height: 136px;
-}
+} */
 
 .ta-center {
     text-align: center;
@@ -994,13 +994,13 @@ a {
 }
 
 /* ============================Flex============================== */
-
+/* 
 .flex-row-nowrap {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-}
+} */
 
 .flex-row-stable {
     display: flex;
@@ -1008,31 +1008,31 @@ a {
     flex-wrap: nowrap;
     justify-content: center;
 }
-
+/* 
 .flex-row-nowrap-left {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
+} */
 
 .flex-row-wrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+/* 
 .flex-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-}
+} */
 
 /* ============================Float============================== */
-
+/* 
 .float-left {
     float: left;
-}
+} */
 
 .float-right {
     float: right;
@@ -1043,18 +1043,18 @@ a {
 }
 
 /* ============================Position============================== */
-
+/* 
 .absolute-left {
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 
-.absolute-right {
+/* .absolute-right {
     position: absolute;
     top: 0;
     right: 0;
-}
+} */
 
 /* ============================Fonts============================== */
 
@@ -1143,6 +1143,62 @@ a {
     font-size: 12px;
 }
 
+/* @font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/Montserrat-Regular.woff');
+}
+
+.f-RalewayRegular-34 {
+    font-family: Raleway-Regular;
+    font-size: 34px;
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url('../fonts/Montserrat-Light.woff');
+}
+
+.f-MontserratLight-14 {
+    font-family: Montserrat-Light;
+    font-size: 14px;
+}
+
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url('../fonts/Raleway-Medium.woff');
+}
+
+.f-RalewayMedium-36 {
+    font-family: Raleway-Medium;
+    font-size: 36px;
+}
+
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url('../fonts/Raleway-ExtraBold.woff');
+}
+
+.f-RalewayExtraBold-52 {
+    font-family: Raleway-ExtraBold;
+    font-size: 52px;
+}
+
+.f-MontserratLight-16 {
+    font-family: Montserrat-Light;
+    font-size: 16px;
+}
+
+.f-RalewayExtraBold-14 {
+    font-family: Raleway-ExtraBold;
+    font-size: 14px;
+}
+
+.f-RalewaySemiBold-22 {
+    font-family: Raleway-SemiBold;
+    font-size: 22px;
+} */
+
 .p7-photos1, .p7-photos2, .p7-photos3, .p7-photos4 {
     width: 48%;
     height: 98px;
@@ -1165,10 +1221,10 @@ a {
 }
 
 /* ============================Font colors============================== */
-
+/* 
 .fc-white {
     color: #ffffff;
-}
+} */
 
 .fc-menu {
     color: #c7b299;
