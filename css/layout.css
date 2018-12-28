@@ -550,9 +550,9 @@ a { text-decoration: none; color: white; }
 }
 
 .p6-photo1, .p6-photo2, .p6-photo3 { width: 100%; height: 220px; }
-.p6-photo1 { background-image: url('../images/page6/page6-photo1.png'); }
-.p6-photo2 { background-image: url('../images/page6/page6-photo2.png'); }
-.p6-photo3 { background-image: url('../images/page6/page6-photo3.png'); }
+.p6-photo1 { background-image: url('../images/page6/page6-photo1.jpg'); }
+.p6-photo2 { background-image: url('../images/page6/page6-photo2.jpg'); }
+.p6-photo3 { background-image: url('../images/page6/page6-photo3.jpg'); }
 
 .p6-items-content { width: 100%; height: 175px; }
 
@@ -908,10 +908,10 @@ a { text-decoration: none; color: white; }
     height: 98px;
 }
 
-.p7-photos1 { background: url('../images/page7/page7-photo1.png') center; }
-.p7-photos2 { background: url('../images/page7/page7-photo2.png') center; }
-.p7-photos3 { background: url('../images/page7/page7-photo3.png') center; }
-.p7-photos4 { background: url('../images/page7/page7-photo4.png') center; }
+.p7-photos1 { background: url('../images/page7/page7-photo1.jpg') center; }
+.p7-photos2 { background: url('../images/page7/page7-photo2.jpg') center; }
+.p7-photos3 { background: url('../images/page7/page7-photo3.jpg') center; }
+.p7-photos4 { background: url('../images/page7/page7-photo4.jpg') center; }
 
 /* ============================Font colors============================== */
 .fc-white { color: #ffffff; }
