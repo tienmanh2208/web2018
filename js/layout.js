@@ -199,7 +199,9 @@ function changeMenuPage2(direction) {
  * @param {*} direction 'next' or 'pre'
  */
 function changeContentPage1(direction) {
-    $('#p1-content-text').fadeTo('0.1', 0, function () {
+    document.getElementById('p1-content-text').style.opacity = 0;
+
+    fade = setTimeout(function () {
         if (direction === 'next') {
             if (p1_content[0] === (p1_content.length - 1)) {
                 p1_content[0] = 1;
@@ -212,8 +214,8 @@ function changeContentPage1(direction) {
             } else { changeContentOfPage1(p1_content[0] - 1, p1_content[0]--) }
         }
 
-        $('#p1-content-text').fadeTo('0.2', 1);
-    })
+        document.getElementById('p1-content-text').style.opacity = 1;
+    }, 500)
 }
 
 /**
