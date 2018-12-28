@@ -4,12 +4,480 @@
 <head>
     <title>Layout</title>
     <style>
-        body{margin:0;font-size:24pt;cursor:default;z-index:100}.frame{transition:background-color 1s}.borderinset{border-style:inset;border-width:thin;border-color:black}.frame{width:100%;position:relative}.page1,.page2,.page3,.page4,.page5,.page6,.page7{width:100%;position:relative}.page1-menu,.page2-menu,.page2footercontent,.page3-header,.page3-content,.page4-content,.page5-frame,.page5-menu,.page6-content,.page7-logos,.page7-content,.page7-footer{width:61.2%}ul li{display:inline}a{text-decoration:none;color:white}.cursor-pointer{cursor:pointer}.cursor-default{cursor:default}.button{width:170px;height:50px;border-radius:5px;background-color:#998675;border-width:1px;border-color:#998675;border-bottom-style:solid;border-bottom-width:3px;border-bottom-color:#736357}.button:hover{background-color:#fff;color:#998675;transition:all 0.3s ease;border-color:#998675}.page1{position:relative}.p1-blur{width:100%;height:1026px;background-image:url(../images/page1/page1-background.jpg);background-position:40% 0%;filter:brightness(40%);transition:0.5s ease-in}.p1-img-background{filter:brightness(50%)}#p1-content{margin-top:18px}.page1-header{width:274px;height:136px}.page1-menu{max-width:1920px;height:136px;margin:auto;position:relative}.p1-sidenav-overlay{position:fixed;right:0;top:0;background:rgba(0,0,0,.7);transition:0.5s;height:100%}.p1-sidenav{width:0;position:fixed;right:0;top:0;display:block;background-color:#000;width:0;height:100%;line-height:90px;transition:0.5s;z-index:1;font-family:Montserrat-Light;font-size:40px}#p1-sidenav-close{font-size:90px}.sidenav-menu{margin:20px 60px;text-align:center}.p1-menu-icon{margin-top:54px}.p1-header-option{margin-top:56px;margin-right:20px;float:right;font-size:25px}.icon-expandmenu{display:none}.page1content{width:100%;height:754px}#p1-content-text{-moz-transition:opacity 0.2s ease-out;-webkit-transition:opacity 0.2s ease-out;-o-transition:opacity 0.2s ease-out;transition:opacity 0.2s ease-out}.slideleft,.slideright{width:19%;height:754px}.slideleft{float:left}.slideright{float:right}.slide{width:100%;height:136px;clear:both}.p1-name{transition:0.5s}.p1-menu{margin-right:29px}.p1-img-logos{margin-top:35px}.p1-menu:hover a{color:#c7b299}.p1-img-left,.p1-img-right{width:40px;height:73px}.p1-img-right{background-image:url(../images/page1/page1-right-dbl.png);background-position:0 0}.p1-img-right:hover{background-position:40px 0}.p1-img-left{background-image:url(../images/page1/page1-left-dbl.png);background-position:0 0}.p1-img-left:hover{background-position:40px 0}.p1-img-circle{width:11px;margin:0 3px}.p1-img-active{width:15px;margin:0 3px}.page2-menu{margin:auto;margin-bottom:110px}.page2content{max-width:1920px;width:100%;height:618px;margin:auto;position:relative}.page2footer{width:100%;height:150px;margin:auto;background-image:linear-gradient(to right,#211b19,#4e3427)}.p2-submenu{min-width:200px;width:23.23%;height:344px;display:flex;flex-direction:column;justify-content:center;margin:0 15px 0 15px;transition:ease 0.3s}.p2-img{width:100%;height:481px;position:absolute;bottom:0;margin-top:39px}.p2-img-center,.p2-img-right,.p2-img-left{position:absolute;width:40%;bottom:0}.p2-img-center{left:30%}.p2-img-left{left:18%}.p2-img-right{right:18%;bottom:0}.page2footercontent{height:100%;margin:auto}.page2footerleft{float:left;height:100%}.page2footerright{float:right;height:100%}.p2_{width:25%;border-style:solid;border-width:1px;border-color:#fff;margin:auto;margin-top:30px}.p2-webappdesign,.p2-development,.p2-customization,.p2-marketing{width:52px;height:52px}.p2-webappdesign{background-image:url(../images/page2/page2-icon-webappdesign-dbl.png);margin:auto;background-position:0 0}.p2-development{background-image:url(../images/page2/page2-icon-development-dbl.png);margin:auto;background-position:0 0}.p2-customization{background-image:url(../images/page2/page2-icon-customization-dbl.png);margin:auto;background-position:0 0}.p2-marketing{background-image:url(../images/page2/page2-icon-marketing-dbl.png);margin:auto;background-position:0 0}.p2-submenu:hover .p2-webappdesign{background-position:52px 0}.p2-submenu:hover .p2-development{background-position:52px 0}.p2-submenu:hover .p2-customization{background-position:52px 0}.p2-submenu:hover .p2-marketing{background-position:52px 0}.p2-submenu:hover .p2-menutitle{color:#c7b299;transition:all 0.3s ease}.p2-submenu:hover .p2_{border-color:#c7b299;transition:all 0.3s ease}.p2-content-content{padding-left:30%;padding-right:30%;margin-top:22px;color:#8c8c8c}.p2-menu-flex{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:center;scroll-behavior:smooth}.p2-slider{margin:15px 0;visibility:hidden}.p2-slider-active{width:20%;border-color:#918f8f}.p2-slider-deactive{width:5%;border-color:#bbb}.p2-slider-mobile{margin:0 15px;border-style:solid;border-width:5px;border-radius:5px;transition:0.3s}
+        body {
+            margin: 0px;
+            font-size: 24pt;
+            cursor: default;
+            z-index: 100;
+        }
+
+        .frame {
+            transition: background-color 1s;
+        }
+
+        .borderinset {
+            border-style: inset;
+            border-width: thin;
+            border-color: black;
+        }
+
+        .frame {
+            /* max-width: 1920px; */
+            width: 100%;
+            /* margin: auto; */
+            position: relative;
+        }
+
+        .page1, .page2, .page3, .page4, .page5, .page6, .page7 {
+            width: 100%;
+            position: relative;
+        }
+
+        .page1-menu, .page2-menu, .page2footercontent, .page3-header, .page3-content, .page4-content, .page5-frame, .page5-menu, .page6-content, .page7-logos, .page7-content, .page7-footer {
+            width: 61.2%;
+        }
+
+        ul li {
+            display: inline;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .cursor-default {
+            cursor: default;
+        }
+
+        .button {
+            width: 170px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #998675;
+            border-width: 1px;
+            border-color: #998675;
+            border-bottom-style: solid;
+            border-bottom-width: 3px;
+            border-bottom-color: #736357;
+        }
+
+        .button:hover {
+            background-color: #ffffff;
+            color: #998675;
+            transition: all 0.3s ease;
+            border-color: #998675;
+        }
+
+        /* ============================Page 1============================ */
+
+        .page1 {
+            position: relative;
+        }
+
+        .p1-blur {
+            width: 100%;
+            height: 1026px;
+            background-image: url('./images/page1/page1-background.jpg');
+            background-position: 40% 0%;
+            filter: brightness(40%);
+            transition: 0.5s ease-in;
+        }
+
+        .p1-img-background {
+            filter: brightness(50%);
+        }
+
+        #p1-content {
+            margin-top: 18px;
+        }
+
+        .page1-header {
+            width: 274px;
+            height: 136px;
+        }
+
+        .page1-menu {
+            max-width: 1920px;
+            height: 136px;
+            margin: auto;
+            position: relative;
+        }
+
+        .p1-sidenav-overlay {
+            position: fixed;
+            right: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: 0.5s;
+            height: 100%;
+        }
+
+        .p1-sidenav {
+            width: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            display: block;
+            background-color: #000000;
+            width: 0px;
+            height: 100%;
+            line-height: 90px;
+            transition: 0.5s;
+            z-index: 1;
+            font-family: Montserrat-Light;
+            font-size: 40px;
+        }
+
+        #p1-sidenav-close {
+            font-size: 90px;
+        }
+
+        .sidenav-menu {
+            margin: 20px 60px;
+            text-align: center;
+        }
+
+        .p1-menu-icon {
+            margin-top: 54px;
+        }
+
+        .p1-header-option {
+            margin-top: 56px;
+            margin-right: 20px;
+            float: right;
+            font-size: 25px;
+        }
+
+        .icon-expandmenu {
+            display: none;
+        }
+
+        .page1content {
+            width: 100%;
+            height: 754px;
+        }
+
+        #p1-content-text {
+            -moz-transition: opacity 0.2s ease-out;
+            -webkit-transition: opacity 0.2s ease-out;
+            -o-transition: opacity 0.2s ease-out;
+            transition: opacity 0.2s ease-out;
+        }
+
+        .slideleft, .slideright {
+            width: 19%;
+            height: 754px;
+        }
+
+        .slideleft {
+            float: left;
+        }
+
+        .slideright {
+            float: right;
+        }
+
+        .slide {
+            width: 100%;
+            height: 136px;
+            clear: both;
+        }
+
+        .p1-name {
+            transition: 0.5s;
+        }
+
+        .p1-menu {
+            margin-right: 29px;
+        }
+
+        .p1-img-logos {
+            margin-top: 35px;
+        }
+
+        .p1-menu:hover a {
+            color: #c7b299;
+        }
+
+        .p1-img-left, .p1-img-right {
+            width: 40px;
+            height: 73px;
+        }
+
+        .p1-img-right {
+            background-image: url('./images/page1/page1-right-dbl.png');
+            background-position: 0 0;
+        }
+
+        .p1-img-right:hover {
+            background-position: 40px 0;
+        }
+
+        .p1-img-left {
+            background-image: url('./images/page1/page1-left-dbl.png');
+            background-position: 0 0;
+        }
+
+        .p1-img-left:hover {
+            background-position: 40px 0;
+        }
+
+        .p1-img-circle {
+            width: 11px;
+            margin: 0 3px;
+        }
+
+        .p1-img-active {
+            width: 15px;
+            margin: 0 3px;
+        }
+
+        /* =================================Page 2================================ */
+
+        .page2-menu {
+            margin: auto;
+            margin-bottom: 110px;
+        }
+
+        .page2content {
+            max-width: 1920px;
+            width: 100%;
+            height: 618px;
+            margin: auto;
+            position: relative;
+        }
+
+        .page2footer {
+            width: 100%;
+            height: 150px;
+            margin: auto;
+            background-image: linear-gradient(to right, #211b19, #4e3427);
+        }
+
+        .p2-submenu {
+            min-width: 200px;
+            width: 23.23%;
+            height: 344px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 15px 0 15px;
+            transition: ease 0.3s;
+        }
+
+        .p2-img {
+            width: 100%;
+            height: 481px;
+            position: absolute;
+            bottom: 0;
+            margin-top: 39px;
+        }
+
+        .p2-img-center, .p2-img-right, .p2-img-left {
+            position: absolute;
+            width: 40%;
+            bottom: 0;
+        }
+
+        .p2-img-center {
+            left: 30%;
+        }
+
+        .p2-img-left {
+            left: 18%;
+        }
+
+        .p2-img-right {
+            right: 18%;
+            bottom: 0;
+        }
+
+        .page2footercontent {
+            height: 100%;
+            margin: auto;
+        }
+
+        .page2footerleft {
+            float: left;
+            height: 100%;
+        }
+
+        .page2footerright {
+            float: right;
+            height: 100%;
+        }
+
+        .p2_ {
+            width: 25%;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #ffffff;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .p2-webappdesign, .p2-development, .p2-customization, .p2-marketing {
+            width: 52px;
+            height: 52px;
+        }
+
+        .p2-webappdesign {
+            background-image: url('./images/page2/page2-icon-webappdesign-dbl.png');
+            margin: auto;
+            background-position: 0px 0;
+        }
+
+        .p2-development {
+            background-image: url('./images/page2/page2-icon-development-dbl.png');
+            margin: auto;
+            background-position: 0px 0;
+        }
+
+        .p2-customization {
+            background-image: url('./images/page2/page2-icon-customization-dbl.png');
+            margin: auto;
+            background-position: 0px 0;
+        }
+
+        .p2-marketing {
+            background-image: url('./images/page2/page2-icon-marketing-dbl.png');
+            margin: auto;
+            background-position: 0px 0;
+        }
+
+        .p2-submenu:hover .p2-webappdesign {
+            background-position: 52px 0;
+        }
+
+        .p2-submenu:hover .p2-development {
+            background-position: 52px 0;
+        }
+
+        .p2-submenu:hover .p2-customization {
+            background-position: 52px 0;
+        }
+
+        .p2-submenu:hover .p2-marketing {
+            background-position: 52px 0;
+        }
+
+        .p2-submenu:hover .p2-menutitle {
+            color: #c7b299;
+            transition: all 0.3s ease;
+        }
+
+        .p2-submenu:hover .p2_ {
+            border-color: #c7b299;
+            transition: all 0.3s ease;
+        }
+
+        .p2-content-content {
+            padding-left: 30%;
+            padding-right: 30%;
+            margin-top: 22px;
+            color: #8c8c8c;
+        }
+
+        .p2-menu-flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            scroll-behavior: smooth;
+            /* -webkit-overflow-scrolling: touch; */
+        }
+
+        .p2-slider {
+            margin: 15px 0;
+            visibility: hidden;
+        }
+
+        .p2-slider-active {
+            width: 20%;
+            border-color: #918f8f;
+        }
+
+        .p2-slider-deactive {
+            width: 5%;
+            border-color: #bbbbbb;
+        }
+
+        .p2-slider-mobile {
+            margin: 0 15px;
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        /* Fonts */
+        @font-face {
+            font-family: Montserrat-Regular;
+            src: url('../fonts/Montserrat-Regular.woff');
+        }
+
+        .f-RalewayRegular-34 {
+            font-family: Raleway-Regular;
+            font-size: 34px;
+        }
+
+        @font-face {
+            font-family: Montserrat-Light;
+            src: url('../fonts/Montserrat-Light.woff');
+        }
+
+        .f-MontserratLight-14 {
+            font-family: Montserrat-Light;
+            font-size: 14px;
+        }
+
+
+        @font-face {
+            font-family: Raleway-Medium;
+            src: url('../fonts/Raleway-Medium.woff');
+        }
+
+        .f-RalewayMedium-36 {
+            font-family: Raleway-Medium;
+            font-size: 36px;
+        }
+
+        @font-face {
+            font-family: Raleway-ExtraBold;
+            src: url('../fonts/Raleway-ExtraBold.woff');
+        }
+
+        .f-RalewayExtraBold-52 {
+            font-family: Raleway-ExtraBold;
+            font-size: 52px;
+        }
+
+        .f-MontserratLight-16 {
+            font-family: Montserrat-Light;
+            font-size: 16px;
+        }
+
+        .f-RalewayExtraBold-14 {
+            font-family: Raleway-ExtraBold;
+            font-size: 14px;
+        }
+
+        .f-RalewaySemiBold-22 {
+            font-family: Raleway-SemiBold;
+            font-size: 22px;
+        }
     </style>
     <link rel="stylesheet" href="./css/layout.css">
     <script src="./js/layout.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
 </head>
+
 <body>
     <div class='frame' id="frame">
         <!-- ===============================Page 1============================= -->
