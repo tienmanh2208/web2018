@@ -1143,7 +1143,7 @@ a {
     font-size: 12px;
 }
 
-/* @font-face {
+@font-face {
     font-family: Montserrat-Regular;
     src: url('../fonts/Montserrat-Regular.woff');
 }
@@ -1197,7 +1197,7 @@ a {
 .f-RalewaySemiBold-22 {
     font-family: Raleway-SemiBold;
     font-size: 22px;
-} */
+}
 
 .p7-photos1, .p7-photos2, .p7-photos3, .p7-photos4 {
     width: 48%;
