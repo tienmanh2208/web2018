@@ -1368,6 +1368,15 @@ a {
         margin-right: 0px;
     }
 
+    #p1-sidenav-close {
+        margin: 10px 0 10px 20px;
+    }
+
+    .sidenav-icon-search {
+        float: right;
+        margin: 10px 10px 10px 0;
+    }
+
     .flex-row-nowrap {
         flex-wrap: wrap;
     }
