@@ -1504,11 +1504,11 @@ a {
         overflow: auto;
         white-space: nowrap;
         /* display: inline-block; */
-        padding: 30px 0;
+        padding: 50px 0;
         /* height: 688px; */
     }
     .p3-item-active {
-        box-shadow: 0 0 60px;
+        box-shadow: 0 0 50px;
         margin: 0 10px;
     }
     #p3-item-1 {
