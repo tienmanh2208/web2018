@@ -76,9 +76,6 @@ window.onload = function (ev) {
         p1_sidenav.style.width = '0px';
     }
 
-    // p1_sidenav.onclick = function () {
-    // }
-
     document.getElementById('p3-all').onclick = function () { changeStateTabPage3('p3-all', p3_tab_current); }
     document.getElementById('p3-webdesign').onclick = function () { changeStateTabPage3('p3-webdesign', p3_tab_current); }
     document.getElementById('p3-mobileapp').onclick = function () { changeStateTabPage3('p3-mobileapp', p3_tab_current); }
@@ -124,8 +121,8 @@ window.onload = function (ev) {
     }
 
     page1content.ontouchend = function () {
-        if ((touch.end_x - touch.start_x) > 100) { changeContentPage1('next'); }
-        else if ((touch.end_x - touch.start_x) < -100) { changeContentPage1('pre'); }
+        if ((touch.end_x - touch.start_x) > 100) { changeContentPage1('pre'); }
+        else if ((touch.end_x - touch.start_x) < -100) { changeContentPage1('next'); }
     }
 }
 
@@ -208,7 +205,7 @@ function changeMenuPage2(direction) {
  * @param {*} direction 'next' or 'pre'
  */
 function changeContentPage1(direction) {
-    document.getElementById('p1-content-text').style.opacity = 0;
+    document.getElementById('page1content').style.opacity = 0;
 
     fade = setTimeout(function () {
         if (direction === 'next') {
@@ -223,8 +220,8 @@ function changeContentPage1(direction) {
             } else { changeContentOfPage1(p1_content[0] - 1, p1_content[0]--) }
         }
 
-        document.getElementById('p1-content-text').style.opacity = 1;
-    }, 500)
+        document.getElementById('page1content').style.opacity = 1;
+    }, 300)
 }
 
 /**
