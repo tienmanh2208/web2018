@@ -1353,8 +1353,8 @@ a {
 }
 
 @media only screen and (max-width: 1000px) {
-    .button {
-        /* height: 60px; */
+    .p1-blur {
+        height: 826px;
     }
     .p1-img-logos {
         width: 80px;
@@ -1377,6 +1377,7 @@ a {
     .page1content {
         width: 80%;
         padding-left: 10%;
+        height: 554px;
     }
     .page2footercontent {
         width: 90%;

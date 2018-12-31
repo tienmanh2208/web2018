@@ -47,19 +47,28 @@ window.onload = function (ev) {
     // p1_sidenav = document.getElementById('p1-sidevav');
     page1content = document.getElementById('page1content');
     p3_slider = document.getElementById('p3-slider');
+    p1_sidenav = document.getElementById('p1-sidenav');
 
     document.getElementById('p1-left').onclick = function () { changeContentPage1('pre'); }
 
     document.getElementById('p1-right').onclick = function () { changeContentPage1('next'); }
 
     document.getElementById('p1-header-option').onclick = function () {
-        p1_sidenav_overlay.style.width = '100%';
-        p1_sidenav.style.width = '60%';
+        p1_sidenav_overlay.style.transform = 'translate(0,0)';
+        p1_sidenav_overlay.style.msTransform = 'translate(0,0)';
+        p1_sidenav_overlay.style.webkitTransform = 'translate(0,0)';
+        p1_sidenav.style.transform = 'translate(0,0)';
+        p1_sidenav.style.msTransform = 'translate(0,0)';
+        p1_sidenav.style.webkitTransform = 'translate(0,0)';
     }
 
     document.getElementById('p1-sidenav-close').onclick = function () {
-        p1_sidenav_overlay.style.width = '0px';
-        p1_sidenav.style.width = '0px';
+        p1_sidenav_overlay.style.transform = 'translate(100%,0)';
+        p1_sidenav_overlay.style.msTransform = 'translate(100%,0)';
+        p1_sidenav_overlay.style.webkitTransform = 'translate(100%,0)';
+        p1_sidenav.style.transform = 'translate(100%,0)';
+        p1_sidenav.style.msTransform = 'translate(100%,0)';
+        p1_sidenav.style.webkitTransform = 'translate(100%,0)';
     }
 
     p1_sidenav_overlay.onclick = function () {
