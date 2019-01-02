@@ -1502,20 +1502,20 @@ a {
     }
     .p3-item {
         width: 80%;
-        height: 288px;
+        height: 438px;
         border-radius: 20px;
         padding: 0;
     }
     .p3-photo {
         border-radius: 20px 20px 0 0;
-        height: 188px;
+        height: 338px;
     }
     .p3-item-content {
         height: 100px;
         border-radius: 0 0 20px 20px;
     }
     .p3-overlay {
-        height: 188px;
+        height: 338px;
     }
     .page3-flex-row {
         display: block;
@@ -1673,6 +1673,18 @@ a {
 
     .p2-img {
         height: 250px;
+    }
+
+
+    .p3-item {
+        width: 80%;
+        height: 288px;
+        border-radius: 20px;
+        padding: 0;
+    }
+    .p3-photo {
+        border-radius: 20px 20px 0 0;
+        height: 188px;
     }
 }
 
