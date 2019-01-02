@@ -694,6 +694,8 @@ a {
     /* height: 42.8%; */
 }
 
+.p5-content-menu { margin-left: 40px; }
+
 ._ {
     border-style: solid;
     border-width: 1px;
@@ -1335,6 +1337,10 @@ a {
     .page2content {
         height: 450px;
     }
+
+    .p5-icon {
+        width: 20%;
+    }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -1391,9 +1397,6 @@ a {
     .page2footercontent {
         width: 90%;
     }
-    .p3-item {
-        width: 100%;
-    }
     .p6-items {
         width: 100%;
     }
@@ -1427,7 +1430,7 @@ a {
         line-height: 60px;
     }
     .page2content {
-        height: 350px;
+        height: unset;
     }
     .p2-img-left, .p2-img-right {
         width: 50%;
@@ -1465,6 +1468,11 @@ a {
         flex-wrap: wrap;
         width: 100%;
     }
+
+    .p2-img {
+        position: relative;
+        height: 330px;
+    }
     .page2footer {
         height: unset;
     }
@@ -1488,6 +1496,7 @@ a {
     .page3-content {
         width: 100%;
     }
+
     .p3-photo1, .p3-photo2, .p3-photo3, .p3-photo4, .p3-photo5, .p3-photo6 {
         background-size: 100% auto;
     }
@@ -1533,6 +1542,9 @@ a {
     .p2-content-content {
         padding: 0 0;
     }
+    .page5 {
+        margin-top: 20px;
+    }
     .page5-frame {
         height: auto;
         width: 100%;
@@ -1559,14 +1571,20 @@ a {
     .p5-photo {
         width: 80%;
         right: 10%;
+        max-height: 500px;
+        object-fit: contain;
     }
     .p5-icon {
-        width: 35%;
-        margin: 10px;
+        width: 30%;
+        margin: 30px;
     }
     .p5-flex-row {
         flex-wrap: wrap;
         padding: 10px;
+    }
+
+    .p5-content-menu {
+        margin-left: 0px;
     }
     .p6-text {
         width: 100%;
@@ -1587,7 +1605,8 @@ a {
         width: 100%;
     }
     .p6-photo1, .p6-photo2, .p6-photo3 {
-        background-size: 100% auto;
+        background-size: 110%;
+        background-position: center 70%;
     }
     .page7-content {
         width: 100%;
@@ -1616,8 +1635,12 @@ a {
         margin: 20px;
         height: 30%;
     }
-    .page7top, .p7-blur, .page7-logos {
+    /* .page7top, .p7-blur{
         height: 400px;
+    } */
+
+    .page7-logos {
+        height: inherit;
     }
 
     .p7-content-col { 
@@ -1640,6 +1663,31 @@ a {
     }
     .pdl30 { padding-left: 10px;}
     .pdr30 { padding-right: 10px;}
+}
+
+@media only screen and (max-width: 600px) {
+    .p5-icon {
+        width: 50%;
+        margin: 10px;
+    }
+
+    .p2-img {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .f-RalewayRegular-34 {
+        font-size: 20px;
+    }
+
+    .p1-img-logos {
+        width: 60px;
+    }
+
+    .p2-img {
+        height: 200px;
+    }
 }
 
 /* ===================================display========================================= */
