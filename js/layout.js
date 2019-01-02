@@ -125,8 +125,12 @@ window.onload = function (ev) {
     }
 
     p1_content_text.ontouchend = function () {
-        if ((touch.end_x - touch.start_x) > 100) { changeContentPage1('pre'); }
-        else if ((touch.end_x - touch.start_x) < -100) { changeContentPage1('next'); }
+        if (touch.end_x != 0 && touch.start_x != 0) {
+            if ((touch.end_x - touch.start_x) > 100) { changeContentPage1('pre'); }
+            else if ((touch.end_x - touch.start_x) < -100) { changeContentPage1('next'); }
+            touch.start_x = 0;
+            touch.end_x = 0;
+        }
     }
 }
 
