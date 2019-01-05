@@ -97,6 +97,9 @@ window.onload = function (ev) {
     page6 = document.getElementById('page6');
     page7 = document.getElementById('page7');
 
+    document.getElementById('page1content').style.opacity = 1;
+    // document.getElementById('page1content').style.transform = 'translateY(0px)';
+
     window.addEventListener('scroll', loadAfter);
 
     document.getElementById('p1-left').onclick = function () { changeContentPage1('pre'); }
@@ -338,22 +341,29 @@ function displayPage(pageNumber) {
     if (pageNumber === 2) {
         tmp = setTimeout(function () {
             document.getElementById('page2-menu').style.opacity = 1;
+            document.getElementById('page2-menu').style.transform = 'translateY(0px)';
             document.getElementById('page2content').style.opacity = 1;
+            document.getElementById('page2content').style.transform = 'translateY(0px)';
         }, 300)
     } else if (pageNumber === 3) {
         tmp = setTimeout(function () {
             document.getElementById('page3-header').style.opacity = 1;
             document.getElementById('page3-content').style.opacity = 1;
+            document.getElementById('page3-header').style.transform = 'translateY(0px)';
+            document.getElementById('page3-content').style.transform = 'translateY(0px)';
         }, 200)
     } else if (pageNumber === 4) {
         tmp = setTimeout(function () {
             document.getElementById('page4-content').style.opacity = 1;
+            document.getElementById('page4-content').style.transform = 'translateY(0px)';
         }, 300)
     } else if (pageNumber === 5) {
         console.log('page5');
         tmp = setTimeout(function () {
             document.getElementById('page5-frame').style.opacity = 1;
             document.getElementById('page5footer').style.opacity = 1;
+            document.getElementById('page5-frame').style.transform = 'translateY(0px)';
+            document.getElementById('page5footer').style.transform = 'translateY(0px)';
             $('.p5-icon-counter').each(function () {
                 $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
@@ -369,12 +379,16 @@ function displayPage(pageNumber) {
     } else if (pageNumber === 6) {
         tmp = setTimeout(function () {
             document.getElementById('page6-content').style.opacity = 1;
+            document.getElementById('page6-content').style.transform = 'translateY(0px)';
         }, 300)
     } else if (pageNumber === 7) {
         tmp = setTimeout(function () {
             document.getElementById('page7top').style.opacity = 1;
             document.getElementById('page7center').style.opacity = 1;
             document.getElementById('page7bottom').style.opacity = 1;
+            document.getElementById('page7top').style.transform = 'translateY(0px)';
+            document.getElementById('page7center').style.transform = 'translateY(0px)';
+            document.getElementById('page7bottom').style.transform = 'translateY(0px)';
         }, 300)
     }
 }

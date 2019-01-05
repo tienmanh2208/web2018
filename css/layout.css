@@ -384,7 +384,7 @@ a {
 
 .p2-slider {
     margin: 15px 0;
-    opacity: 0;
+    opacity: 0;transform: translateY(100px);
 }
 
 .p2-slider-active {
@@ -410,15 +410,15 @@ a {
 .page3-header {
     height: 252px;
     margin: auto;
-    opacity: 0;
-    transition: 0.5s ease;
+    opacity: 0;transform: translateY(100px);
+    transition: 1s ease;
 }
 
 .page3-content {
     max-width: 1175px;
     margin: auto;
-    opacity: 0;
-    transition: 0.5s ease;
+    opacity: 0;transform: translateY(100px);
+    transition: 1s ease;
 }
 
 .p3-btn-active, .p3-btn {
@@ -617,7 +617,7 @@ a {
     top: 0;
     left: 19.4%;
     height: 704px;
-    opacity: 0;
+    opacity: 0;transform: translateY(100px);
     transition: 0.5s;
 }
 
@@ -652,8 +652,8 @@ a {
     height: 696px;
     margin: auto;
     position: relative;
-    opacity: 0;
-    transition: 0.5s ease;
+    opacity: 0;transform: translateY(100px);
+    transition: 1s ease;
 }
 
 .page5photo {
@@ -676,8 +676,8 @@ a {
     width: 100%;
     height: 302px;
     background-image: linear-gradient(to right, #211b19, #4e3427);
-    transition: 0.5s ease;
-    opacity: 0;
+    transition: 1s ease;
+    opacity: 0;transform: translateY(100px);
 }
 
 .page5-menu {
@@ -732,7 +732,7 @@ a {
 
 .page6-content {
     margin: auto;
-    opacity: 0;
+    opacity: 0;transform: translateY(100px);
     transition: 0.5s;
 }
 
@@ -859,8 +859,8 @@ a {
     height: 492px;
     position: relative;
     /* background: #fff url('../images/page7/page7-header-background.png') center center no-repeat; */
-    opacity: 0;
-    transition: 0.5s ease;
+    opacity: 0;transform: translateY(100px);
+    transition: 1s ease;
 }
 
 .p7-blur {
@@ -874,16 +874,16 @@ a {
     width: 100%;
     /* height: 508px; */
     background: #191919;
-    transition: 0.5s ease;
-    opacity: 0;
+    transition: 1s ease;
+    opacity: 0;transform: translateY(100px);
 }
 
 .page7bottom {
     width: 100%;
     height: 112px;
     background: #000000;
-    transition: 0.5s ease;
-    opacity: 0;
+    transition: 1s ease;
+    opacity: 0;transform: translateY(100px);
 }
 
 .page7-logos {
