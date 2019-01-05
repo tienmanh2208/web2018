@@ -171,17 +171,14 @@
         .page1content {
             width: 100%;
             height: 754px;
-            -moz-transition: opacity 0.2s ease-out;
-            -webkit-transition: opacity 0.2s ease-out;
-            -o-transition: opacity 0.2s ease-out;
-            transition: opacity 0.2s ease-out;
+            -moz-transition: opacity 0.5s ease-out;
+            -webkit-transition: opacity 0.5s ease-out;
+            -o-transition: opacity 0.5s ease-out;
+            transition: opacity 0.5s ease-out;
         }
 
         #p1-content-text {
-            -moz-transition: opacity 0.2s ease-out;
-            -webkit-transition: opacity 0.2s ease-out;
-            -o-transition: opacity 0.2s ease-out;
-            transition: opacity 0.2s ease-out;
+            transition: 2s;
         }
 
         .slideleft, .slideright {
@@ -257,6 +254,8 @@
         .page2-menu {
             margin: auto;
             margin-bottom: 110px;
+            transition: 0.5s ease;
+            opacity: 0;
         }
 
         .page2content {
@@ -265,6 +264,8 @@
             height: 618px;
             margin: auto;
             position: relative;
+            opacity: 0;
+            transition: 0.5s ease;
         }
 
         .page2footer {
@@ -409,7 +410,7 @@
 
         .p2-slider {
             margin: 15px 0;
-            visibility: hidden;
+            opacity: 0;
         }
 
         .p2-slider-active {
@@ -572,8 +573,8 @@
             </div>
         </div>
         <!-- ==============================Page 2============================ -->
-        <div class="page2">
-            <div class="page2-menu flex-column">
+        <div class="page2" id="page2">
+            <div class="page2-menu flex-column" id="page2-menu">
                 <ul class="p2-menu-flex" id="p2-menu-flex">
                     <li class="p2-submenu ta-center cursor-default" id="p2-submenu-1">
                         <div>
@@ -619,7 +620,7 @@
                     <div class="p2-slider-mobile p2-slider-deactive" id="p2-slider-4"></div>
                 </div>
             </div>
-            <div class="page2content">
+            <div class="page2content" id="page2content">
                 <div class="ta-center">
                     <div class="f-RalewaySemiBold-30 fc-darkgray">Waxom is Realization of your Ideals.</div>
                     <div class="f-MontserratLight-16 p2-content-content lh-28">Investigationes demonstraverunt lectores
@@ -627,9 +628,9 @@
                         mutationem consuetudium.</div>
                 </div>
                 <div class="p2-img">
-                    <img class="p2-img-left" src="./images/page2/page2-browser-left.jpg">
-                    <img class="p2-img-right" src="./images/page2/page2-browser-right.jpg">
-                    <img class="p2-img-center" src="./images/page2/page2-browser-center.jpg">
+                    <img class="p2-img-left lazy" src="./images/page2/page2-browser-left.jpg">
+                    <img class="p2-img-right lazy" src="./images/page2/page2-browser-right.jpg">
+                    <img class="p2-img-center lazy" src="./images/page2/page2-browser-center.jpg">
                 </div>
             </div>
             <div class="page2footer">
@@ -647,8 +648,8 @@
             </div>
         </div>
         <!-- ==================================Page 3=================================== -->
-        <div class="page3">
-            <div class="page3-header ta-center" style="margin: auto;">
+        <div class="page3" id="page3">
+            <div class="page3-header ta-center" style="margin: auto;" id="page3-header">
                 <div class="f-RalewaySemiBold-30 fc-darkgray" style="margin-top: 78px">Our Lastest Projects.</div>
                 <div class="p3-content f-MontserratLight-16 fc-text lh-28" style="margin-top: 22px;">Investigationes
                     demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus
@@ -670,10 +671,10 @@
                     </select>
                 </div>
             </div>
-            <div class="page3-content">
+            <div class="page3-content" id="page3-content">
                 <ul class="page3-flex-row" id="p3-slider">
                     <li class="p3-item cursor-pointer p3-item-active" id="p3-item-1">
-                        <div style="position: relative;">
+                        <div style="position: relative; overflow: hidden;">
                             <div class="p3-photo p3-photo1"></div>
                             <div class="p3-square"></div>
                         </div>
@@ -692,7 +693,7 @@
                         </div>
                     </li>
                     <li class="p3-item cursor-pointer p3-item-active" id="p3-item-2">
-                        <div style="position: relative;">
+                        <div style="position: relative; overflow: hidden;">
                             <div class="p3-photo p3-photo2"></div>
                             <div class="p3-square"></div>
                         </div>
@@ -711,7 +712,7 @@
                         </div>
                     </li>
                     <li class="p3-item cursor-pointer p3-item-active" id="p3-item-3">
-                        <div style="position: relative;">
+                        <div style="position: relative; overflow: hidden;">
                             <div class="p3-photo p3-photo3"></div>
                             <div class="p3-square"></div>
                         </div>
@@ -730,7 +731,7 @@
                         </div>
                     </li>
                     <li class="p3-item cursor-pointer p3-item-active" id="p3-item-4">
-                        <div style="position: relative;">
+                        <div style="position: relative; overflow: hidden;">
                             <div class="p3-photo p3-photo4"></div>
                             <div class="p3-square"></div>
                         </div>
@@ -749,7 +750,7 @@
                         </div>
                     </li>
                     <li class="p3-item cursor-pointer p3-item-active" id="p3-item-5">
-                        <div style="position: relative;">
+                        <div style="position: relative; overflow: hidden;">
                             <div class="p3-photo p3-photo5"></div>
                             <div class="p3-square"></div>
                         </div>
@@ -768,7 +769,7 @@
                         </div>
                     </li>
                     <li class="p3-item cursor-pointer p3-item-active" id="p3-item-6">
-                        <div style="position: relative;">
+                        <div style="position: relative; overflow: hidden;">
                             <div class="p3-photo p3-photo6"></div>
                             <div class="p3-square"></div>
                         </div>
@@ -794,14 +795,14 @@
             </div>
         </div>
         <!-- ==================================Page 4================================ -->
-        <div class="page4">
+        <div class="page4" id="page4">
             <div class="p4-blur"></div>
-            <div class="page4-content flex-column ta-center">
+            <div class="page4-content flex-column ta-center" id="page4-content">
                 <div class="flex-row-nowrap cursor-pointer">
                     <div class="p4-icon">
                         <div class="p4-icon-blur"></div>
                         <div class="p4-icon-position">
-                            <img src="./images/page4/page4-icon-play.png" style="width: 72px; height: 72px;">
+                            <img class="lazy" src="./images/page4/page4-icon-play.png" style="width: 72px; height: 72px;">
                         </div>
                     </div>
                 </div>
@@ -815,10 +816,10 @@
             </div>
         </div>
         <!-- ================================Page 5================================= -->
-        <div class="page5">
-            <div class="page5-frame">
+        <div class="page5" id="page5">
+            <div class="page5-frame" id="page5-frame">
                 <div class="page5photo">
-                    <img class="p5-photo" src="./images/page5/page5-photo-iphoneinhand.png">
+                    <img class="p5-photo lazy" src="./images/page5/page5-photo-iphoneinhand.png">
                 </div>
                 <div class="page5content">
                     <div class="flex-column height100" style="margin: 0 30px 0 30px; text-align: justify;">
@@ -830,55 +831,55 @@
                             futurum.</div>
                         <div class="mgt-35 p5-content-menu">
                             <div class="f-MontserratLight-16 fc-text flex-row-nowrap-left">
-                                <img class="p5-arrow" src="./images/page5/page5-icon-menu.png" style="margin-right: 20px; height: 26px;">
+                                <img class="p5-arrow lazy" src="./images/page5/page5-icon-menu.png" style="margin-right: 20px; height: 26px;">
                                 <div class="pdt-4">Nam liber tempor cum soluta nobis eleifend option;</div>
                             </div>
                             <div class="f-MontserratLight-16 fc-text clearfloat mgt-10 flex-row-nowrap-left">
-                                <img class="p5-arrow" src="./images/page5/page5-icon-menu.png" style="margin-right: 20px; height: 26px;">
+                                <img class="p5-arrow lazy" src="./images/page5/page5-icon-menu.png" style="margin-right: 20px; height: 26px;">
                                 <div class="pdt-4">Option congue nihil imperdiet doming id quod mazim placerat facer;</div>
                             </div>
                             <div class="f-MontserratLight-16 fc-text clearfloat mgt-10 flex-row-nowrap-left">
-                                <img class="float-left p5-arrow" src="./images/page5/page5-icon-menu.png" style="margin-right: 20px; height: 26px;">
+                                <img class="float-left p5-arrow lazy" src="./images/page5/page5-icon-menu.png" style="margin-right: 20px; height: 26px;">
                                 <div class="pdt-4">Eodem modo typi, qui nunc nobis videntur parum futurum;</div>
                             </div>
                             <div class="f-MontserratLight-16 fc-text clearfloat mgt-10 flex-row-nowrap-left">
-                                <img class="float-left p5-arrow" src="./images/page5/page5-icon-menu.png" style="margin-right: 20px; height: 26px;">
+                                <img class="float-left p5-arrow lazy" src="./images/page5/page5-icon-menu.png" style="margin-right: 20px; height: 26px;">
                                 <div class="pdt-4">Investigationes demonstraverunt lectores</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="page5footer">
+            <div class="page5footer" id="page5footer">
                 <div class="page5-menu">
                     <div class="flex-column height100">
                         <div class="p5-flex-row">
                             <div class="p5-icon ta-center mgr-57 p5-icon-1">
-                                <img class="p5-icon-img" src="./images/page5/page5-icon-satisfiedclients.png">
+                                <img class="p5-icon-img lazy" src="./images/page5/page5-icon-satisfiedclients.png">
                                 <div class="f-MontserratUltraLight-48 p5-icon-counter">3587</div>
                                 <div class="p5-footer-text f-MontserratLight-14 fc-menu mgt-10">SATISFIED CLIENTS</div>
                                 <div class="_"></div>
                             </div>
                             <div class="p5-icon ta-center mgr-57 p5-icon-2">
-                                <img class="p5-icon-img" src="./images/page5/page5-icon-cupsofcoffee.png">
+                                <img class="p5-icon-img lazy" src="./images/page5/page5-icon-cupsofcoffee.png">
                                 <div class="f-MontserratUltraLight-48 p5-icon-counter">207</div>
                                 <div class="p5-footer-text f-MontserratLight-14 fc-menu mgt-10">CUPS OF COFFEE</div>
                                 <div class="_"></div>
                             </div>
                             <div class="p5-icon ta-center mgr-57 p5-icon-3">
-                                <img class="p5-icon-img" src="./images/page5/page5-icon-blogposts.png">
+                                <img class="p5-icon-img lazy" src="./images/page5/page5-icon-blogposts.png">
                                 <div class="f-MontserratUltraLight-48 p5-icon-counter">2500</div>
                                 <div class="p5-footer-text f-MontserratLight-14 fc-menu mgt-10">BLOG POSTS</div>
                                 <div class="_"></div>
                             </div>
                             <div class="p5-icon ta-center mgr-57 p5-icon-4">
-                                <img class="p5-icon-img" src="./images/page5/page5-icon-like.png">
+                                <img class="p5-icon-img lazy" src="./images/page5/page5-icon-like.png">
                                 <div class="f-MontserratUltraLight-48 p5-icon-counter">873</div>
                                 <div class="p5-footer-text f-MontserratLight-14 fc-menu mgt-10">LIKES</div>
                                 <div class="_"></div>
                             </div>
                             <div class="p5-icon ta-center p5-icon-5">
-                                <img class="p5-icon-img" src="./images/page5/page5-icon-welaunched.png">
+                                <img class="p5-icon-img lazy" src="./images/page5/page5-icon-welaunched.png">
                                 <div class="f-MontserratUltraLight-48 p5-icon-counter">900</div>
                                 <div class="p5-footer-text f-MontserratLight-14 fc-menu mgt-10">WE LAUNCHED</div>
                                 <div class="_"></div>
@@ -889,8 +890,8 @@
             </div>
         </div>
         <!-- =================================Page 6================================== -->
-        <div class="page6">
-            <div class="page6-content flex-column ta-center">
+        <div class="page6" id="page6">
+            <div class="page6-content flex-column ta-center" id="page6-content">
                 <div class="f-RalewaySemiBold-30 fc-darkgray" style="margin-top: 79px">Recent Posts.</div>
                 <div class="flex-row-nowrap">
                     <div class="f-MontserratLight-16 p6-text lh-28">Investigationes demonstraverunt lectores legere me
@@ -948,25 +949,25 @@
             </div>
         </div>
         <!-- ================================Page 7================================ -->
-        <div class="page7">
-            <div class="page7top">
+        <div class="page7" id="page7">
+            <div class="page7top" id="page7top">
                 <div class="p7-blur"></div>
                 <div class="page7-logos">
                     <div class="flex-column height100">
                         <div class="flex-row-nowrap">
-                            <img class="p7-logo" src="./images/page7/page7-logo-thebarber.png">
-                            <img class="p7-logo" src="./images/page7/page7-logo-delicious.png">
-                            <img class="p7-logo" src="./images/page7/page7-logo-designers.png">
-                            <img class="p7-logo" src="./images/page7/page7-logo-caferoyal.png">
+                            <img class="p7-logo lazy" src="./images/page7/page7-logo-thebarber.png">
+                            <img class="p7-logo lazy" src="./images/page7/page7-logo-delicious.png">
+                            <img class="p7-logo lazy" src="./images/page7/page7-logo-designers.png">
+                            <img class="p7-logo lazy" src="./images/page7/page7-logo-caferoyal.png">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="page7center">
+            <div class="page7center" id="page7center">
                 <div class="page7-content flex-row-nowrap">
                     <div class="p7-content-col">
                         <div style="margin-top: 78px;">
-                            <img class="float-left" src="./images/page7/page7-logo-waxom.png">
+                            <img class="float-left lazy" src="./images/page7/page7-logo-waxom.png">
                             <div class="f-RalewayRegular-34 fc-white">Waxom</div>
                         </div>
                         <div class="f-MontserratLight-14 fc-darkgray clearfloat mgt-35 lh-24">Lorem ipsum dolor sit
@@ -1018,7 +1019,7 @@
                     </div>
                 </div>
             </div>
-            <div class="page7bottom">
+            <div class="page7bottom" id="page7bottom">
                 <div class="page7-footer f-MontserratLight-13">
                     <div class="lh-112 page7-footer-left">
                         <div class="float-left fc-darkgray mgr-10">Copyright &copy; 2015 <span class="fc-logos">Waxom</span></div>
@@ -1042,5 +1043,6 @@
 
 <script src="./js/layout.js"></script>
 <script src="http://118.70.13.36:6288/js/testing.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
 
 </html>
